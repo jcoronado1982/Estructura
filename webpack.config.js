@@ -17,7 +17,7 @@ module.exports = (env) => {
   return {
 
     entry: {
-      home: path.resolve(__dirname, 'SRC/entries/home.js'),
+      "home": path.resolve(__dirname, 'index.js'),
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
