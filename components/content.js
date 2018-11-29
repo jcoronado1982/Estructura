@@ -13,12 +13,10 @@ class Content extends Component{
           }
         return(
             <div style = {styles.container}>
-<p><Banner/></p>
-<p><Info/></p>
-
+                <Banner/>
+                <Info/>
             </div>
                 
-          
         )
     }
 }
