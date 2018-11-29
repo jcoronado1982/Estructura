@@ -1,25 +1,23 @@
 import React, { Component} from 'react';
-import Banner from './banner.js';
-import Info from './info.js';
-class Content extends Component{
+
+class Header extends Component{
 
     render(){
         const styles = {
             container: {
               color: '#44546b',
               cursor: 'pointer',
+              height:200,
               border: '1px solid black'
             }
           }
         return(
             <div style = {styles.container}>
-<p><Banner/></p>
-<p><Info/></p>
-
+            <h1>esto es un header</h1>
             </div>
                 
           
         )
     }
 }
-export default Content;
+export default Header;
