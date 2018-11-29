@@ -8,10 +8,10 @@ import Content from './content.js';
 function HomeLayout(props){
 return(
   <section className="HomeLayout">
-   <div> <Header/><p></p>  
-<Content/>
-   <p></p> 
-   <Footer/>
+   <div> 
+     <Header/>  
+     <Content/>
+     <Footer/>
    </div>
    
   </section>
