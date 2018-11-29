@@ -1,0 +1,22 @@
+{
+  "name": "estructura",
+  "version": "1.0.0",
+  "description": "estructura de la pagina",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcoronado1982/Estructura.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "NicolasLizarazo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcoronado1982/Estructura/issues"
+  },
+  "homepage": "https://github.com/jcoronado1982/Estructura#readme"
+}
