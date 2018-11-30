@@ -8,14 +8,10 @@ class Home extends Component {
     modalVisible: false,
   }
  
-  
   render() {
     return (
       <HandleError>
-        <HomeLayout>
-        
-         
-        </HomeLayout>
+        <HomeLayout />
       </HandleError>
     )
   }
