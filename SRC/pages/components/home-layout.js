@@ -15,5 +15,4 @@ function HomeLayout(props) {
    </section>
   )
 }
-
 export default HomeLayout;
