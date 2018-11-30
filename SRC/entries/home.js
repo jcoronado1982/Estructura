@@ -1,11 +1,7 @@
 import React from 'react';
-import {render} from 'react-dom';
-import HomeContainer from '../pages/containers/homeContainer.js';
-import Ejemplo from './routerPreset.js';
-console.log('!Esta es la pagina de Prestamos!')
+import { render } from 'react-dom';
+import Home from '../pages/containers/home';
 
-const app = document.getElementById('app');
+const homeContainer = document.getElementById('app')
 
-// ReactDOM.render(que voy a renderizar, donde lo haré);
-// const holaMundo = <h1>hola Estudiante!</h1>;
-render(<Ejemplo/>,app);
+render( <Home/>, homeContainer);

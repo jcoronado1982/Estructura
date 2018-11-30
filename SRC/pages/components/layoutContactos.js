@@ -8,9 +8,7 @@ function LayoutContactos(props){
 return(
   <section className="Back">
    <div className = "HomeLayout"> 
-     <Header/>  
      <Contact/>
-     <Footer/>
    </div>
    
   </section>
