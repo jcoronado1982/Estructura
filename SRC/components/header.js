@@ -6,17 +6,16 @@ class Header extends Component{
         const styles = {
             container: {
               color: '#44546b',
-              cursor: 'pointer',
-              height:200,
+              height:100,
               border: '1px solid black'
             }
           }
         return(
             <div style = {styles.container}>
-            <h1>esto es un header</h1>
-            </div>
-                
-          
+                <center>
+                    <h3>esto es un header</h3>
+                </center>
+            </div>              
         )
     }
 }

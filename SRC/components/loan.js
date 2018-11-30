@@ -8,14 +8,13 @@ class Info extends Component{
               color: '#44546b',
               cursor: 'pointer',
               height:200,
+              margin: 10,
               border: '1px solid red'
             }
           }
         return(
             <div style = {styles.container}>
-            <p><h1>Aqui</h1></p>
-            <p><h1>Va la </h1></p>
-            <p><h1>informacion</h1></p>
+            <h3>Informacion de Prestamos</h3>
             </div>
                 
           

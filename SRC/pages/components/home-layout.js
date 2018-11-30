@@ -7,8 +7,8 @@ import Content from '../../components/content.js';
 
 function HomeLayout(props){
 return(
-  <section className="HomeLayout">
-   <div> 
+  <section className="Back">
+   <div className = "HomeLayout"> 
      <Header/>  
      <Content/>
      <Footer/>

@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import Banner from './banner.js';
-import Info from './info.js';
+import Info from './loan.js';
 class Content extends Component{
 
     render(){
@@ -8,7 +8,7 @@ class Content extends Component{
             container: {
               color: '#44546b',
               cursor: 'pointer',
-              border: '1px solid black'
+              border: '1px solid black',
             }
           }
         return(

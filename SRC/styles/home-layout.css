@@ -1,11 +1,21 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #171c30;
   }
   .HomeLayout {
-    display: flex;
-    margin: 0 auto;
+    margin: 20px;
     min-height: 100vh;
+    
+    background: white;
+  }
+  .Back {
+    
+    background:grey;
   }
   
+  .Caja{
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+  }
+  .center {
+    text-align: center;
+}

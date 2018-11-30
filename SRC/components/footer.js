@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-
+import '../styles/home-layout.css';
 class Footer extends Component{
 
     render(){
@@ -13,11 +13,11 @@ class Footer extends Component{
           }
         return(
             <div style = {styles.container}>
-            <footer>esto es un footer</footer>
-            </div>
-                
-          
-        )
+                <center>
+                 <footer>esto es un footer</footer>
+                </center>
+            </div>             
+            )
     }
 }
 export default Footer;
