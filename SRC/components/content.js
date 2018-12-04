@@ -1,18 +1,13 @@
 import React, { Component} from 'react';
-import Banner from './banner.js';
-import Info from './loan.js';
+import Banner from '../banner/components/banner';
+import Info from '../loans/components/loan';
+import '../styles/content.css';
 class Content extends Component{
 
     render(){
-        const styles = {
-            container: {
-              color: '#44546b',
-              cursor: 'pointer',
-              border: '1px solid black',
-            }
-          }
+       
         return(
-            <div style = {styles.container}>
+            <div class="ContentBox">
                 <Banner/>
                 <Info/>
             </div>

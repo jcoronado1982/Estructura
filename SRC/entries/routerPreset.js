@@ -12,14 +12,14 @@ function BasicExample() {
             <Link to="/">Loan MainPage</Link>
           </li>
           <li>
-            <Link to="/Contactos">Contactos</Link>
+            <Link to="/Help">Help</Link>
           </li>
         </ul>
 
         <hr />
 
         <Route exact path="/" component={HomeLayout} />
-        <Route path="/Contactos" component={ContactosContainer} />
+        <Route path="/Help" component={ContactosContainer} />
         <Route path="/topics" component={Topics} />
       </div>
     </Router>
