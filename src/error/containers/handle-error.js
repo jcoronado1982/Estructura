@@ -6,7 +6,7 @@ class HandleError extends Component {
     handleError: false,
   }
   componentDidCatch(error, info) {
-    this.setState({
+      this.setState({
       handleError: true,
     })
   }

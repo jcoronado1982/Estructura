@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import HomeLayout from '../pages/containers/homeContainer';
+import Home from '../pages/containers/home';
 import ContactosContainer from '../pages/containers/contactosContainer.js';
 
 function BasicExample() {
@@ -18,7 +18,7 @@ function BasicExample() {
 
         <hr />
 
-        <Route exact path="/" component={HomeLayout} />
+        <Route exact path="/" component={Home} />
         <Route path="/Help" component={ContactosContainer} />
         <Route path="/topics" component={Topics} />
       </div>
