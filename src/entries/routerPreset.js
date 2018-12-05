@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from '../pages/containers/home';
-import ContactosContainer from '../pages/containers/contactosContainer.js';
+import HelpContainer from '../pages/containers/helpContainer.js';
 
 function BasicExample() {
   return (
@@ -19,7 +19,7 @@ function BasicExample() {
         <hr />
 
         <Route exact path="/" component={Home} />
-        <Route path="/Help" component={ContactosContainer} />
+        <Route path="/Help" component={HelpContainer} />
         <Route path="/topics" component={Topics} />
       </div>
     </Router>

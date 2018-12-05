@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import LayoutContactos from '../components/layoutContactos.js';
 import HandleError from '../../error/containers/handle-error';
 
-class ContactosContainer extends Component{
+class HelpContainer extends Component{
     render(){
         return(
             <HandleError>
@@ -11,4 +11,4 @@ class ContactosContainer extends Component{
         )
     }
 }
-export default ContactosContainer;
+export default HelpContainer;
