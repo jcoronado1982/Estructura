@@ -4,7 +4,7 @@ import Home from '../pages/containers/home';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from '../reducers/index';
-import Router from './routerPreset.js';
+import Router from './router.js';
 const store = createStore(
     reducer,
     {},

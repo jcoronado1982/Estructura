@@ -3,7 +3,7 @@ import '../../styles/home-layout.css';
 import Header from '../../components/header.js';
 import Footer from '../../components/footer.js';
 import Content from '../../components/content.js';
-import '../../styles/grid.css';
+import '../../styles/styles.css';
 import Banner from '../../banner/components/banner';
 import Info from '../../loans/components/loan';
 function HomeLayout(props) {
