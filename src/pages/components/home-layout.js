@@ -4,23 +4,14 @@ import Header from '../../components/header.js';
 import Footer from '../../components/footer.js';
 import Content from '../../components/content.js';
 import '../../styles/styles.css';
-import Banner from '../../banner/components/banner';
-import Info from '../../loans/components/loan';
+
 function HomeLayout(props) {
   return (
-    <section className="Back">
-      <div className = "container"> 
-      <div className="item"><Header/> </div>
-    <div className="item">
-      <div class="item"> <Banner/></div>
-      <div class="item"> <Info/></div>
-    </div>
-    
-    
-    <div className="item"><Footer/></div>
-  
-      </div>
-   </section>
+      <section className="container">
+          <Header/>
+          <Content/>
+          <Footer/>
+      </section>
   )
 }
 export default HomeLayout;

@@ -1,13 +1,1 @@
-.HeaderBox{
-
-    
-      
-    width:99.5%;
-height:90%;
-    
-    border:3px solid burlywood;
-    
-    
-    
-    
-    }
+.header {grid-area: header;}

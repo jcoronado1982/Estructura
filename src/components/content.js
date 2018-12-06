@@ -1,15 +1,18 @@
 import React, { Component} from 'react';
 import Banner from '../banner/components/banner';
-import Info from '../loans/components/loan';
 import '../styles/content.css';
 class Content extends Component{
 
     render(){
        
         return(
-            <div class="ContentBox">
+            <div className="item contenido">
                 <Banner/>
-                <Info/>
+                <div className="item contenido2">
+                    hola<br></br>
+                    hola<br></br>
+                    hola<br></br>
+                </div>
             </div>
                 
         )

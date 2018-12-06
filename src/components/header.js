@@ -5,18 +5,10 @@ class Header extends Component{
 
     render(){
         return(
-            <div class= "HeaderBox">
-                <center>
-                    <h3><ul>
-          <li>
-            <Link to="/">Loan MainPage</Link>
-          </li>
-          <li>
-            <Link to="/Help">Help</Link>
-          </li>
-        </ul></h3>
-                </center>
-            </div>              
+            <div className="item header">
+                <Link to="/">Loan MainPage</Link>
+                <Link to="/Help">Help</Link>
+            </div>       
         )
     }
 }

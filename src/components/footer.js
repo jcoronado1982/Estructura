@@ -4,11 +4,7 @@ class Footer extends Component{
 
     render(){
         return(
-            <div class= "FooterBox">
-                <center>
-                 <footer>esto es un footer</footer>
-                </center>
-            </div>             
+            <div className="item footer">footer</div>    
             )
     }
 }

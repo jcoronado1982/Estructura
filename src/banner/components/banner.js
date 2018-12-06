@@ -4,9 +4,7 @@ class Banner extends Component{
 
     render(){
         return(
-            <div class="BannerBox">
-            <h1>Esto es un Banner</h1>
-            </div>                    
+            <div className="item banner">banner</div>                 
         )
     }
 }
