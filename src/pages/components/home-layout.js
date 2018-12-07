@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/home-layout.css';
+import '../css/home-layout.css';
 import Header from '../../components/header.js';
 import Footer from '../../components/footer.js';
 import Content from '../../components/content.js';
@@ -12,6 +12,6 @@ function HomeLayout(props) {
           <Content/>
           <Footer/>
       </section>
-  )
+    )
 }
 export default HomeLayout;

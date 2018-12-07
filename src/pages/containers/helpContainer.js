@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
-import LayoutContactos from '../components/layoutContactos.js';
+import Help from '../../help/components/help';
 import HandleError from '../../error/containers/handle-error';
 
 class HelpContainer extends Component{
+    state = {
+        modalVisible: false,
+      }
+      
     render(){
         return(
             <HandleError>
-                <LayoutContactos/>
+                <Help/>
             </HandleError>           
         )
     }

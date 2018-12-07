@@ -1,18 +1,17 @@
-import React, { Component} from 'react';
-import Banner from '../../banner/components/banner';
-import Info from '../../loans/components/loan';
-import './css/help.css';
-class Content extends Component{
+import React from 'react';
+import '../css/help.css';
+import Header from '../../components/header.js';
+import Footer from '../../components/footer.js';
+import Content from '../../components/content.js';
+import '../../styles/styles.css';
 
-    render(){
-        return(
-            <div class="HelpBox">
-            <h3>Informacion de Contactos</h3>
-            <p>lista</p>
-            <p>de</p>
-            <p>contactos</p>
-            </div>
-        )
-    }
+function Help(props){
+  return (
+    <div>
+       Pagina de help
+    
+    </div>     
+  )
+
 }
-export default Content;
+export default Help;
