@@ -1,15 +1,10 @@
 import React, { Component} from 'react';
 import './css/loans.css';
-class loans extends Component{
-
+class Loans extends Component{
     render(){
         return(
-           <div>
-                hola<br></br>
-                hola<br></br>
-                hola<br></br>
-           </div>             
+            <div>contenido</div>                 
         )
     }
 }
-export default loans;
+export default Loans;
