@@ -1,17 +1,13 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import '../css/home-layout.css';
-import Header from '../../components/header.js';
-import Footer from '../../components/footer.js';
+
+
 import Content from '../../components/content.js';
 import '../../styles/styles.css';
 
 function HomeLayout(props) {
   return (
-      <section className="container">
-          <Header/>
-          <Content/>
-          <Footer/>
-      </section>
+     <Content/>
     )
 }
 export default HomeLayout;
