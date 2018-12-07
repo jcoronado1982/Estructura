@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import Banner from '../banner/components/banner';
 import '../styles/content.css';
-import loans from '../loans/components/loans';
+import Loans from '../loans/components/loans';
 class Content extends Component{
 
     render(){
@@ -10,7 +10,7 @@ class Content extends Component{
             <div className="item contenido">
                 <Banner/>
                 <div className="item contenido2">
-                    <loans/>
+                   <Loans/>
                 </div>
             </div>    
         )
