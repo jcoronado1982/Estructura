@@ -1,13 +1,15 @@
 import React, { Component} from 'react';
 import './css/loan.css';
-class Info extends Component{
+class loans extends Component{
 
     render(){
         return(
-            <div class="LoanBox">
-            <h3>Informacion de Prestamos</h3>
-            </div>                      
+           <div>
+                hola<br></br>
+                hola<br></br>
+                hola<br></br>
+           </div>             
         )
     }
 }
-export default Info;
+export default loans;

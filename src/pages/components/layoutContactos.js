@@ -8,14 +8,10 @@ import Help from '../../help/components/help.js';
 
 function LayoutContactos(props){
 return(
-  <section className="Back">
-   <div className = "container2"> 
-   <div className="item"><Header/></div>
-   <div className="item"><Help/></div>
-   <div className="item"><Footer/> </div>
-   </div>
-   
-  </section>
+  <div>
+      Pagina de help
+    
+  </div>     
 )
 
 }
