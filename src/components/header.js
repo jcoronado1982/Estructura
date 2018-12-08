@@ -1,5 +1,4 @@
 import React, { Component} from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
 class Header extends Component{
@@ -20,7 +19,16 @@ class Header extends Component{
                                 Help
                             </NavLink>
                         </li>
-                      
+                        <li>
+                            <NavLink to="/detalle" activeClassName="is-selected">
+                                Detalle 
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/Register" activeClassName="is-selected">
+                                Register 
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
             

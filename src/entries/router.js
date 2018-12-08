@@ -1,16 +1,29 @@
 import React , {Fragment} from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route , Switch, Redirect} from "react-router-dom";
+import HandleError from '../error/containers/handle-error';
 import Home from '../pages/containers/home';
-import HelpContainer from '../pages/containers/helpContainer.js';
+import Help from '../pages/containers/helpContainer.js';
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
+import Register from '../register/components/register';
+import '../styles/styles.css';
+import NotFount from '../components/not-fount';
 function routes() {
   return (
       <section className="container">
-        <Header/>
-        <Route exact path="/" component={Home} />
-        <Route  path="/Help" component={HelpContainer} />
-        <Footer/>
+        <HandleError>
+          <Header/>
+          <div className="item contenido">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/Help" component={Help} />
+              <Route exact path="/Register" component={Register} />
+              <Redirect from="/registrar" to="Register" />
+              <Route component={NotFount} />
+            </Switch>
+          </div>
+          <Footer/>
+        </HandleError>
        </section>
   );
 }

@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template: 65px 1fr 240px/ 1fr 1fr;
+    grid-gap: 0px;
+    height: 100vh;
+    grid-template-areas: "header header"
+                          "contenido contenido"
+                          "footer footer";
+  }
+  .contenido {grid-area: contenido;}
+  .item {background: lightblue;padding: 10px;}
+  .item:nth-of-type(2) {background: blue;padding: 0px;}
