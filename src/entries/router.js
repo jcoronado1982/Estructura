@@ -8,10 +8,12 @@ import Footer from '../components/footer.js';
 import Register from '../register/components/register';
 import '../styles/styles.css';
 import NotFound from '../components/not-found';
+import Loading from '../components/loading';
 function routes() {
   return (
       <section className="container">
         <HandleError>
+          <Loading/>
           <Header/>
           <div className="item contenido">
             <Switch>
