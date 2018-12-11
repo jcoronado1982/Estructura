@@ -7,7 +7,7 @@ import Header from '../components/header.js';
 import Footer from '../components/footer.js';
 import Register from '../register/components/register';
 import '../styles/styles.css';
-import NotFount from '../components/not-fount';
+import NotFound from '../components/not-found';
 function routes() {
   return (
       <section className="container">
@@ -19,7 +19,7 @@ function routes() {
               <Route exact path="/Help" component={Help} />
               <Route exact path="/Register" component={Register} />
               <Redirect from="/registrar" to="Register" />
-              <Route component={NotFount} />
+              <Route component={NotFound} />
             </Switch>
           </div>
           <Footer/>
