@@ -3,7 +3,13 @@ import './css/loans.css';
 class Loans extends Component{
     render(){
         return(
-            <div>contenido</div>                 
+            <div>
+                <div>contenido</div>  
+                <div>contenido</div>  
+                <div>contenido</div>  
+                <div>contenido</div>  
+            </div>  
+            
         )
     }
 }

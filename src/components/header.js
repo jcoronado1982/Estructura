@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
+import Login from '../login/components/login';
 class Header extends Component{
 
     render(){
@@ -11,22 +12,33 @@ class Header extends Component{
                     <ul>
                         <li>
                             <NavLink to="/" activeClassName="is-selected">
-                                Home 
+                                Lend
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/Borrow" activeClassName="is-selected">
+                                Borrow
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/Help" activeClassName="is-selected">
-                                Help
+                                Help center
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/detalle" activeClassName="is-selected">
-                                Detalle 
+                            <NavLink to="/Auction" activeClassName="is-selected">
+                                In auction 
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Register" activeClassName="is-selected">
-                                Register 
+                            <NavLink to="/Exchange" activeClassName="is-selected">
+                                Exchange your loan
+                            </NavLink>
+                        </li>
+                        
+                        <li  className="floatright">
+                            <NavLink to="/Login" activeClassName="is-selected">
+                                <Login/>
                             </NavLink>
                         </li>
                     </ul>

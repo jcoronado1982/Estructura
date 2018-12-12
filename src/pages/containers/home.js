@@ -5,8 +5,7 @@ import HandleError from '../../error/containers/handle-error';
 class Home extends Component {
   render() {
     return (
-      <HandleError>
-       
+      <HandleError>       
         <HomeLayout />        
       </HandleError>
     )

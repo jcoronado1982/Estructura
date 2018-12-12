@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 //import '../styles/loading.css';
-import Gif from '../../img/loading/gif-transp-3s.gif';
+import Gif from '../../../img/loading/gif-transp-1,5.gif';
 let myVar;
 class Loading extends Component{
     
@@ -25,7 +25,7 @@ disable() {
     this.setState({ show: false });
     setTimeout(this.disable2.bind(this), 3000);
   }
-
+ 
     render(){
        
         if(this.state.loadingHome)

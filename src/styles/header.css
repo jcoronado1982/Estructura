@@ -6,7 +6,12 @@ ul {
     overflow: hidden;
     background-color: #333;
   }
-  
+  .floatleft {
+    float:left;
+}
+.floatright {
+    float:right;
+}
   li {
     float: left;
   }
