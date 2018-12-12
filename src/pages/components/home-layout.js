@@ -7,7 +7,7 @@ function HomeLayout(props) {
   return (
       <div>
         <Banner/>
-        <div className="item contenido2">
+        <div className="item">
           <Loans/>
         </div>
       </div>
