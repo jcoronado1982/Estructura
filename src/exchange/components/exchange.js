@@ -3,7 +3,7 @@ import '../css/exchange.css';
 function Exchange(props){
   return (
     <div>
-      Exchange
+      <div className="item Module">Exchange</div>  
     </div>    
   )
 

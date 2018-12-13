@@ -3,7 +3,7 @@ import '../css/simulator.css';
 function Simulator(props){
   return (
     <div>
-      Loan Simulator
+      <div className="item Module">Simulator</div>  
     </div>    
   )
 

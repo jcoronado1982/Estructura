@@ -3,7 +3,7 @@ import '../css/borrow.css';
 function Borrow(props){
   return (
     <div>
-      Borrow
+      <div className="item Module">Borrow</div>   
     </div>    
   )
 

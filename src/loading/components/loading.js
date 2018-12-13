@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-//import '../styles/loading.css';
+import '../css/loading.css';
 import Gif from '../../../img/loading/gif-transp-1,5.gif';
 let myVar;
 class Loading extends Component{
@@ -31,11 +31,9 @@ disable() {
         if(this.state.loadingHome)
         {
         return(
-            <div 
-            //className="item footer"
-            ><center>
+            <div className="Loading">
                 {this.state.show ? <img src={Gif} /> : null}
-            </center>
+            
             </div>    
             );  }else{return null;}
             

@@ -1,40 +1,34 @@
 import React from 'react';
 import '../css/info.css';
 import { Link, NavLink } from'react-router-dom';
-function Help(props){
+function Info(props){
   return (
-    <div>
-       <nav>
-                    <ul>
-                        <li>
-                            <NavLink to="/" activeClassName="is-selected">
-                                How does it Work?
-                            </NavLink>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <NavLink to="/" activeClassName="is-selected">
-                                Requirements
-                            </NavLink>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <NavLink to="/" activeClassName="is-selected">
-                                Terms and Conditions
-                            </NavLink>
-                        </li>
-                    </ul> <ul>
-                        <li>
-                            <NavLink to="/" activeClassName="is-selected">
-                                Frequent Questions
-                            </NavLink>
-                        </li>
-                    </ul>
-                </nav>
-    </div>    
-  )
+       <div className="info">    
+            <div className="information">
+                <h3>Information</h3>
 
+                <div className="item2">
+                    <NavLink to="/" activeClassName="is-selected">
+                            how does it work?        
+                    </NavLink>  
+                </div>    
+                <div className="item2">
+                    <NavLink to="/" activeClassName="is-selected">
+                            Requirements       
+                    </NavLink>  
+                </div>      
+                <div className="item2">
+                    <NavLink to="/" activeClassName="is-selected">
+                            Terms and Conditions       
+                    </NavLink>  
+                </div>      
+                <div className="item2">
+                    <NavLink to="/" activeClassName="is-selected">
+                            Frequent Questions       
+                    </NavLink>  
+                </div> 
+           </div>                                              
+    </div>
+  )
 }
-export default Help;
+export default Info;

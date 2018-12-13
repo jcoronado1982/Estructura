@@ -11,6 +11,7 @@ import NotFound from '../components/not-found';
 import Loading from '..//loading/components/loading';
 
 import Info from '../info/components/info';
+import Login from '../login/components/login';
 
 import Borrow from '../borrow/components/borrow';
 import InAuction from '../auction/components/auction';
@@ -20,6 +21,7 @@ import LoanSimulator from '../simulator/components/simulator';
 import Chat from '../chat/components/chat';
 import Contact from '../contact/components/contact';
 import About from '../about/components/about';
+import Risks from '../risks/components/risks';
 
 function routes() {
   return (
@@ -41,6 +43,9 @@ function routes() {
               <Route exact path="/Chat" component={Chat} />
               <Route exact path="/Contact" component={Contact} />
               <Route exact path="/About" component={About} />
+              <Route exact path="/Risks" component={Risks} />
+
+              <Route exact path="/Login" component={Login} />
 
               <Route exact path="/Register" component={Register} />
               <Redirect from="/registrar" to="Register" />

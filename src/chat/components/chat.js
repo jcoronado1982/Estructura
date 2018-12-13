@@ -3,7 +3,7 @@ import '../css/chat.css';
 function Chat(props){
   return (
     <div>
-      Chat
+      <div className="item Module">Chat</div>  
     </div>    
   )
 

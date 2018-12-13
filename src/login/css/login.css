@@ -1,0 +1,63 @@
+
+.login {
+    width:350px;
+    height:400px;
+   background:white;
+  
+   display: grid;
+   grid-template: 100px 200px 100px/ 350px;
+   grid-template-areas: "section1 "
+                        "section2"
+                        "section3";
+  }
+ 
+  .login .section1 {
+    grid-area: section1;
+    background: rgb(206, 138, 195);
+    display: grid;
+    grid-template: 50px 50px/ 350px;
+    grid-template-areas: "option1"
+                         "option2";
+  }
+  .login .section1 .option:nth-of-type(1){
+    grid-area: option1;
+}
+.login .section1 .option:nth-of-type(2){
+    grid-area: option2;
+}
+  .login .section2 {
+    grid-area: section2;
+    background: rgb(163, 124, 199);
+    display: grid;
+    grid-template: 50px 50px 50px 50px/ 350px;
+    grid-template-areas: "user"
+                         "password"
+                         "enter"
+                         "forgot";
+  }
+  .login .section2 .option:nth-of-type(1){
+    grid-area: user;
+}
+.login .section2 .option:nth-of-type(2){
+    grid-area: password;
+}
+.login .section2 .option:nth-of-type(3){
+    grid-area: enter;
+}
+.login .section2 .option:nth-of-type(4){
+    grid-area: forgot;
+}
+  .login .section3 {
+    grid-area: section3;
+    background: rgb(194, 106, 157);
+    display: grid;
+    grid-template: 50px 50px/ 350px;
+    grid-template-areas: "noaccount"
+                         "register";
+  }
+.login .section3 .option:nth-of-type(1){
+    grid-area: noaccount;
+}
+.login .section3 .option:nth-of-type(2){
+    grid-area: register;
+}

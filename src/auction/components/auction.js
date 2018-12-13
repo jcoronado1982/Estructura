@@ -3,8 +3,8 @@ import '../css/auction.css';
 function Auction(props){
   return (
     <div>
-      In Auction
-    </div>    
+      <div className="item Module">In Auction</div>   
+    </div>     
   )
 
 }

@@ -3,7 +3,7 @@ import '../css/contact.css';
 function Contact(props){
   return (
     <div>
-      Contact
+     <div className="item Module">Contact</div>  
     </div>    
   )
 

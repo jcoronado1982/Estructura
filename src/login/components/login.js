@@ -1,31 +1,60 @@
 import React, { Component } from 'react';
 import '../css/login.css';
+import UserName from './username';
+import Password from './password';
 
 class Login extends Component {
   
   constructor(){
     super();
-    const t=0;
     this.state={
-      Login:true,
-      SignOff:false,
-      Text:'Login',
-      Text2:'SignOff',
+      Visible:true,
       };
       this.ChangeState=this.ChangeState.bind(this);
   }
   
 ChangeState(state,props){
    this.setState({
-    Text:'SignOff',
+Visible:false,
    });
   
   }
 
   render() {
     return (
-     <div onClick={this.ChangeState}>
-       {this.state.Text}
+     <div className="item Module">
+       <div className="login">
+         <div className="section1">
+            <div className="option">
+              boton inicia facebook
+            </div>
+            <div className="option">
+              boton inicia twitter
+            </div>
+         </div>
+         <div className="section2">
+         <div className="option">
+              <UserName/>
+            </div>
+            <div className="option">
+              <Password/>
+            </div>
+            <div className="option">
+              enter
+            </div>
+            <div className="option">
+              forgot password
+            </div>
+         </div>
+         <div className="section3">
+         <div className="option">
+              Not registered?
+            </div>
+            <div className="option">
+              Boton registrar
+            </div>
+         </div>
+       </div>
      </div>
     )
   }

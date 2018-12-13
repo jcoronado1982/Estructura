@@ -3,7 +3,7 @@ import '../css/help.css';
 function Help(props){
   return (
     
-      <div className="item contentHelp">
+      <div className="item Module">
         
             <div>Help</div>  
         
