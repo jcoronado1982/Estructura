@@ -45,7 +45,7 @@ function routes() {
               <Route exact path="/About" component={About} />
               <Route exact path="/Risks" component={Risks} />
 
-              <Route exact path="/Login" component={Login} />
+              {/* <Route exact path="/Login" component={Login} /> */}
 
               <Route exact path="/Register" component={Register} />
               <Redirect from="/registrar" to="Register" />

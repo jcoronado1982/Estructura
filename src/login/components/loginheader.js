@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import '../css/login.css';
+import '../css/loginheader.css';
+import Window from './login';
 
-class Login extends Component {
+class LoginHeader extends Component {
   
   constructor(){
     super();
@@ -11,24 +13,40 @@ class Login extends Component {
       SignOff:false,
       Text:'Login',
       Text2:'SignOff',
+      visible:false,
       };
-      this.ChangeState=this.ChangeState.bind(this);
+      this.show=this.show.bind(this);
   }
   
-ChangeState(state,props){
+show(state,props){
    this.setState({
-    Text:'SignOff',
+    Text:'Log-in',
+    visible:true,
+    
    });
   
   }
 
-  render() {
-    return (
-     <div onClick={this.ChangeState}>
-       {this.state.Text}
-     </div>
-    )
+  render() {    
+    if(this.state.visible)
+    {
+      return (
+        <div onClick={this.show} className="log-in">
+          {this.state.Text}
+          <div className="floating">
+            <Window/>
+          </div>
+        </div>
+       )
+    }else{
+      return (
+        <div onClick={this.show} className="log-in">
+          {this.state.Text}
+        </div>
+       )
+    }
+    
   }
 }
 
-export default Login;
+export default LoginHeader;

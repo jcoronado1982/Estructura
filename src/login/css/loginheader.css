@@ -1,0 +1,18 @@
+.floating {
+
+position:fixed;
+ left:100px;
+ top:100px;
+
+
+}
+.log-in{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.log-in:hover {
+    background-color: #111;
+  }

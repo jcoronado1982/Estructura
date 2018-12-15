@@ -10,13 +10,18 @@
                         "section2"
                         "section3";
   }
+  .close{
+
+    float:right;
+  }
  
   .login .section1 {
     grid-area: section1;
     background: rgb(206, 138, 195);
     display: grid;
-    grid-template: 50px 50px/ 350px;
-    grid-template-areas: "option1"
+    grid-template: 10px 50px 50px/ 350px;
+    grid-template-areas: "close"
+                         "option1"
                          "option2";
   }
   .login .section1 .option:nth-of-type(1){
@@ -24,6 +29,9 @@
 }
 .login .section1 .option:nth-of-type(2){
     grid-area: option2;
+}
+.login .section1 .option:nth-of-type(3){
+    grid-area: close;
 }
   .login .section2 {
     grid-area: section2;

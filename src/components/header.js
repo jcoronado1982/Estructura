@@ -37,9 +37,7 @@ class Header extends Component{
                         </li>
                         
                         <li  className="floatright">
-                            <NavLink to="/Login" activeClassName="is-selected">
                                 <Login/>
-                            </NavLink>
                         </li>
                     </ul>
                 </nav>
