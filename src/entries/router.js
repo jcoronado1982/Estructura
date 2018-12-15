@@ -22,12 +22,11 @@ import Chat from '../chat/components/chat';
 import Contact from '../contact/components/contact';
 import About from '../about/components/about';
 import Risks from '../risks/components/risks';
-
 function routes() {
   return (
       <section className="container">
         <HandleError>
-          <Loading/>
+          <Loading show={true}/>
           <Header/>
           <div className="item contenido">
             <Switch>
