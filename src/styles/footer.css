@@ -2,7 +2,6 @@
 
 .item .footer {
   grid-area: footer;
-   background:white;
   
    display: grid;
    grid-template: 25px 25px 25px 25px 25px 25px 25px / 33.333% 33.333% 33.333%;
@@ -17,29 +16,23 @@
  
   .item .footer .risks {
     grid-area: risks;
-    background: yellowgreen;
+    
   }
   .item .footer .feescomm {
     grid-area: feescomm;
-    background: yellowgreen;
-  }
+     }
   .item .footer .chat {
     grid-area: chat;
-    background: yellowgreen;
-  }
+    }
   .item .footer .simulator {
     grid-area: simulator;
-    background: yellowgreen;
-  }
+    }
   .item .footer .contact {
     grid-area: contact;
-    background: yellowgreen;
-  }
+    }
   .item .footer .about {
     grid-area: about;
-    background: yellowgreen;
-  }
+    }
   .item .footer .rights {
     grid-area: rights;
-    background: rgb(86, 116, 27);
-  }
+   }
