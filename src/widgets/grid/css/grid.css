@@ -1,0 +1,33 @@
+.contentGrid{
+    display: grid;
+    color:white;
+    grid-template: 25px 25px 25px 25px / 33.333% 33.333% 33.333%;
+    grid-template-areas: "title amountSearch amountSearch"
+                         "name email borrow"
+                         "name1 email1 borrow1"
+                         "name2 email2 borrow2";
+   }
+   .contentGrid .title {
+     grid-area: title;   
+     border:1px solid red;
+   }
+   .contentGrid .name {
+    grid-area: name;    
+  }
+  .contentGrid .email {
+    grid-area: email;    
+  }
+  .contentGrid .borrow {
+    grid-area: borrow;    
+  }
+   .contentGrid .amountSearch{
+     grid-area: amountSearch;
+     border:2px solid blueviolet;
+     display: grid;
+     grid-template: 25px / 33.333% 33.333% 33.333%;
+     grid-template-areas: "amount country active "
+    }
+    .contentGrid .amountSearch .amount {
+     grid-area: amount;    
+   }
+  

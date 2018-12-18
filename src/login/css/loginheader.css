@@ -1,11 +1,4 @@
-.floating {
 
-position:fixed;
- left:100px;
- top:100px;
-
-
-}
 .log-in{
     display: block;
     color: white;
@@ -16,3 +9,7 @@ position:fixed;
 .log-in:hover {
     background-color: #111;
   }
+.img-loading{
+    width: 34%;
+    margin: auto;
+}

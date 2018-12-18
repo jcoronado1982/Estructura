@@ -22,6 +22,12 @@ import Chat from '../chat/components/chat';
 import Contact from '../contact/components/contact';
 import About from '../about/components/about';
 import Risks from '../risks/components/risks';
+
+import How from '../info/components/how/components/how';
+import Req from '../info/components/requirements/components/req';
+import Terms from '../info/components/terms-and-conditions/components/terms';
+import Freq from '../info/components/frequent/components/freq';
+
 function routes() {
   return (
       <section className="container">
@@ -43,6 +49,11 @@ function routes() {
               <Route exact path="/Contact" component={Contact} />
               <Route exact path="/About" component={About} />
               <Route exact path="/Risks" component={Risks} />
+
+              <Route exact path="/how-does-it-work" component={How} />
+              <Route exact path="/requirements" component={Req} />
+              <Route exact path="/terms-and-conditions" component={Terms} />
+              <Route exact path="/frequent" component={Freq} />
 
               {/* <Route exact path="/Login" component={Login} /> */}
 
