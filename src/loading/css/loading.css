@@ -9,5 +9,12 @@
 }
 .img-loading{
     width: 34%;
-    margin: auto;
+    position:fixed;
+    left:50%;
+    top:50%;
+}
+.adjustLoading{
+    position:relative;
+    left:-250px;
+    top:-250px;
 }

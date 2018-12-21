@@ -1,12 +1,36 @@
+:root {
+  --rowNum: 3;
+  --colNum: 3;
+  --itemRowNum:1;
+  --listRowHeight: 25px;
+  --itemHeight: 40px;
+  /*  // for demonstrating the use of CSS Variables */
+}
 .contentGrid{
     display: grid;
     color:white;
-    grid-template: 25px 25px 25px 25px / 33.333% 33.333% 33.333%;
+    grid-template: 25px 25px auto / repeat(var(--colNum),1fr);
     grid-template-areas: "title amountSearch amountSearch"
                          "name email borrow"
-                         "name1 email1 borrow1"
-                         "name2 email2 borrow2";
+                         "itemList itemList itemList";
    }
+   .itemList{     
+      grid-area: itemList;   
+      display: grid;
+      background-color: lightblue;
+      border:3px solid lawngreen;
+      color:white;
+      grid-template: repeat(var(--itemRowNum),var(--listRowHeight)) /repeat(var(--colNum),1fr);
+    }
+   .contentGrid .itemlist .listObject .property:nth-child(1) {
+    grid-column:1/2;         
+   }
+   .contentGrid .itemlist .listbject .property:nth-child(2){
+    grid-column:2/3;      
+  }
+  .contentGrid .itemlist .listObject .property:nth-child(3) {
+    grid-column:3/4;    
+  }
    .contentGrid .title {
      grid-area: title;   
      border:1px solid red;

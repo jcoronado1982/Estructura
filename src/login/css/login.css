@@ -9,14 +9,20 @@
     background: #fff;
     z-index: 990;
 }
+.adjustLogin{
+    position:fixed;
+    left:50%;
+    top:50%;
+}
 .loginWindow{
     width:360px;
-    height:410px;
-    position:fixed;
+    height:410px;    
     margin: auto;
     background-color: gray;
-    left:30%;
-    top:30%;
+  
+    position:relative;
+left:-180px;
+top:-205px;
 }
 .login {
     width:350px;
