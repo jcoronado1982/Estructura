@@ -26,7 +26,7 @@ Visible:false,
       
     return (
       <div className="loginBackground">
-        <div className="adjustLogin">
+        
           <div className="loginWindow">
             <div>
             <div className="login">
@@ -68,7 +68,7 @@ Visible:false,
             </div>
           </div>
         </div>
-      </div>
+ 
         
         </div>
       
