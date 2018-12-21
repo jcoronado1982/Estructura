@@ -3,25 +3,63 @@ import '../css/grid.css';
 
 let htmlStyles = window.getComputedStyle(document.querySelector("html"));
 
-let itemRows=1;
-class Loans extends Component{
-    add(props){
-        let rowNum = parseInt(htmlStyles.getPropertyValue("--itemRowNum"));
-        itemRows=itemRows+1;
-        document.documentElement.style.setProperty("--itemRowNum", itemRows);
-    }
+class Grid extends Component{
+    
     render(){
         return(
             <div className="contentGrid">
-                <div className="title" onClick={this.add}>ADD ITEM ROW (TITLE)</div>
+                <div>
+                    <div className="title">ADD ITEM ROW (TITLE)</div>
+                    <div>
+                        <div>
+                            buscador 1
+                        </div>
+                        <div>
+                            buscador 1
+                        </div>
+                        <div>
+                            buscador 1
+                        </div>
+                    </div>
+                </div>
+               <div></div>
                 <div className="name">name</div>
                 <div className="email">e-mail</div>
                 <div className="borrow">borrow</div>
                 <div className="itemList">
-                        <div className="property">itemname</div>
-                        <div className="property">itemEmail</div>
-                        <div className="property">itemBorrowButton</div>
-                                           
+                    <div className="property">Jesus Coronado</div>
+                    <div className="property">jesus@gmail.com</div>
+                    <div className="property">$20.00</div>
+                </div>
+                <div className="itemList">
+                    <div className="property">Jesus Coronado</div>
+                    <div className="property">jesus@gmail.com</div>
+                    <div className="property">$20.00</div>
+                </div>
+                <div className="itemList">
+                    <div className="property">Jesus Coronado</div>
+                    <div className="property">jesus@gmail.com</div>
+                    <div className="property">$20.00</div>
+                </div>
+                <div className="itemList">
+                    <div className="property">Jesus Coronado</div>
+                    <div className="property">jesus@gmail.com</div>
+                    <div className="property">$20.00</div>
+                </div>
+                <div className="itemList">
+                    <div className="property">Jesus Coronado</div>
+                    <div className="property">jesus@gmail.com</div>
+                    <div className="property">$20.00</div>
+                </div>
+                <div className="itemList">
+                    <div className="property">Jesus Coronado</div>
+                    <div className="property">jesus@gmail.com</div>
+                    <div className="property">$20.00</div>
+                </div>
+                <div className="itemList">
+                    <div className="property">Jesus Coronado</div>
+                    <div className="property">jesus@gmail.com</div>
+                    <div className="property">$20.00</div>
                 </div>
                 <div className="amountSearch">
                     <div className="amount">amountbox</div>
@@ -34,4 +72,4 @@ class Loans extends Component{
         )
     }
 }
-export default Loans;
+export default Grid;
