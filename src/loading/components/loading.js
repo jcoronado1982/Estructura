@@ -17,7 +17,7 @@ class Loading extends Component{
     }
   
     render(){
-       return(   
+       return(
         <div>
             {
                this.state.show ?
