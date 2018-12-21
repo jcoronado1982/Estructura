@@ -23,7 +23,9 @@ class Loading extends Component{
                this.state.show ?
                     <div className="loading">
                         <div className="img-loading">
-                            <img src={Gif} />
+                            <div className="adjustLoading">
+                             <img src={Gif} />
+                            </div>                          
                         </div>
                     </div>  
                 :

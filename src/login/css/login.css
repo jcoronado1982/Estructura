@@ -1,7 +1,35 @@
 
+.loginBackground {
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color:black;
+    background: #fff;
+    z-index: 990;
+}
+.adjustLogin{
+    position:fixed;
+    left:50%;
+    top:50%;
+}
+.loginWindow{
+    width:360px;
+    height:410px;    
+    margin: auto;
+    background-color: gray;
+  
+    position:relative;
+left:-180px;
+top:-205px;
+}
 .login {
     width:350px;
     height:400px;
+    position:relative;
+    left:5px;
+    top:5px;
    background:white;
   
    display: grid;
@@ -17,7 +45,7 @@
  
   .login .section1 {
     grid-area: section1;
-    background: rgb(206, 138, 195);
+    background-color: lightgray;
     display: grid;
     grid-template: 10px 50px 50px/ 350px;
     grid-template-areas: "close"
@@ -35,7 +63,7 @@
 }
   .login .section2 {
     grid-area: section2;
-    background: rgb(163, 124, 199);
+    background-color: whitesmoke;
     display: grid;
     grid-template: 50px 50px 50px 50px/ 350px;
     grid-template-areas: "user"
@@ -57,7 +85,7 @@
 }
   .login .section3 {
     grid-area: section3;
-    background: rgb(194, 106, 157);
+    background:lightgray;
     display: grid;
     grid-template: 50px 50px/ 350px;
     grid-template-areas: "noaccount"

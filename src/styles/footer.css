@@ -1,19 +1,44 @@
 .footer {grid-area: footer;}
+.verticalCenter {
+  margin: 0;
+  position: relative;
+  top: 50%;
+}
 
 .item .footer {
   grid-area: footer;
-  
+   background-color: brown;
    display: grid;
    grid-template: 25px 25px 25px 25px 25px 25px 25px / 33.333% 33.333% 33.333%;
    grid-template-areas: "info risks simulator"
                         "info risks simulator"
-                        "info feescomm contact"
-                        "info feescomm contact"
-                        "info chat about"
-                        "info chat about"
+                        "how feescomm contact"
+                        "req feescomm contact"
+                        "terms chat about"
+                        "freq chat about"
                         "rights rights rights";
   }
- 
+  .item .footer .info {
+    grid-area: info;
+    
+  }
+  .item .footer .how {
+    grid-area: how;
+    
+  }
+  .item .footer .req {
+    grid-area: req;
+    
+  }
+  .item .footer .terms {
+    grid-area: terms;
+    
+  }
+  .item .footer .freq {
+    grid-area: freq;
+    
+  }
+
   .item .footer .risks {
     grid-area: risks;
     
@@ -35,4 +60,5 @@
     }
   .item .footer .rights {
     grid-area: rights;
+    background-color: darkred;
    }

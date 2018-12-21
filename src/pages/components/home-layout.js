@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import Banner from '../../banner/components/banner';
 import Loans from '../../loans/components/loans';
+import ContentGrid from '../../widgets/grid/components/grid';
 import '../css/home-layout.css';
 
 function HomeLayout(props) {
@@ -8,7 +9,7 @@ function HomeLayout(props) {
       <div>
         <Banner/>
         <div className="item">
-          <Loans/>
+          <ContentGrid/>
         </div>
       </div>
     )

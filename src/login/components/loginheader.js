@@ -33,8 +33,8 @@ show(state,props){
       return (
         <div onClick={this.show} className="log-in">
           {this.state.Text}
-          <div className="floating">
-            <Window/>
+          <div>
+            <Window visible={true}/>
           </div>
         </div>
        )
