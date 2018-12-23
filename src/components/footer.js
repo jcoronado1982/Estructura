@@ -42,7 +42,7 @@ class Footer extends Component{
                             <center>All rights reserved</center>                       
                         </div>
                         <div className="info">
-                        <center><h3>Information</h3></center>
+                        <center><h3></h3></center>
                         </div>
                             
 
