@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/login.css';
-import '../css/loginheader.css';
+import '../css/session.css';
 import Window from './login';
 
 class LoginHeader extends Component {

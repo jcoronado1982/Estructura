@@ -1,0 +1,14 @@
+:Root{
+    --Columns:3;
+    --Rows:4;
+}
+
+
+.Grid{
+    grid-area: section3;
+    background:lightgray;
+    display: grid;    
+    grid-template: repeat(4,25px)/ repeat(3,1fr);
+    grid-template-areas: "noaccount"
+                         "register";
+}

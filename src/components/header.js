@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
-import Login from '../login/components/loginheader';
+import Login from '../login/components/session';
 class Header extends Component{
 
     render(){
