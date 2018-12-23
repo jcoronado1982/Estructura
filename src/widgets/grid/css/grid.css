@@ -1,14 +1,18 @@
 :Root{
-    --Columns:3;
-    --Rows:4;
+    --columns:1;
+    --rows:1;
 }
 
-
-.Grid{
-    grid-area: section3;
-    background:lightgray;
-    display: grid;    
-    grid-template: repeat(4,25px)/ repeat(3,1fr);
-    grid-template-areas: "noaccount"
-                         "register";
+.grid{
+  display:grid;
+  grid-template-columns: 100%;
 }
+
+.grid-content-th{
+   display: grid;
+   grid-template-columns:repeat(var(--columns),1fr)
+}
+.grid-content-td{
+    display: grid;
+    grid-template-columns:repeat(var(--rows),1fr) 
+ }
