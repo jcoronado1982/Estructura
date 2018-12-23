@@ -1,7 +1,4 @@
-.info {
-    grid-area: info;
-  
-  }
+
 .info .information{
     grid-area: info;
     grid-template: 30px 30px 30px 30px / 200px;

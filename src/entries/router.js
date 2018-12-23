@@ -23,10 +23,10 @@ import Contact from '../contact/components/contact';
 import About from '../about/components/about';
 import Risks from '../risks/components/risks';
 
-import How from '../info/components/how/components/how';
-import Req from '../info/components/requirements/components/req';
-import Terms from '../info/components/terms-and-conditions/components/terms';
-import Freq from '../info/components/frequent/components/freq';
+import How from '../info/how/components/how';
+import Req from '../info/requirements/components/req';
+import Terms from '../info/terms-and-conditions/components/terms';
+import Freq from '../info/frequent/components/freq';
 
 function routes() {
   return (
