@@ -1,10 +1,16 @@
 import React, { Component} from 'react';
 import '../css/grid.css';
 
-let htmlStyles = window.getComputedStyle(document.querySelector("html"));
+
 
 class Grid extends Component{
-    
+    constructor(){
+        super();
+        let htmlStyles = window.getComputedStyle(document.querySelector("html"));
+        let Rows = parseInt(htmlStyles.getPropertyValue("--Rows"));
+        document.documentElement.style.setProperty("--Rows", Rows);
+   
+    }
     render(){
         return(
             <div className="Grid">
