@@ -5,10 +5,9 @@
 
 
 .Grid{
-    grid-area: section3;
     background:lightgray;
     display: grid;    
-    grid-template: repeat(4,25px)/ repeat(3,1fr);
-    grid-template-areas: "noaccount"
-                         "register";
+    grid-template-columns: repeat(var(--columns),1fr);
+    grid-template-rows:25px;
 }
+ 
