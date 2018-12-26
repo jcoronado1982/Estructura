@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
-import Login from '../login/components/session';
+import Session from '../login/components/session';
 class Header extends Component{
 
     render(){
@@ -37,7 +37,7 @@ class Header extends Component{
                         </li>
                         
                         <li  className="floatright">
-                            <Login/>
+                            <Session/>
                         </li>
                     </ul>
                 </nav>
