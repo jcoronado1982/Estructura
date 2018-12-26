@@ -49,7 +49,7 @@ class Grid extends Component{
                 </div>
                 <div className="grid-content-td nuevaclase" id="contenido">
                     <div className="grid-td">
-                        JESUS ALBERTO CORONADO
+                       1
                     </div>
                     <div className="grid-td">
                     JESUS ALBERTO CORONADO
@@ -82,76 +82,7 @@ class Grid extends Component{
                     </div>
 
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-
-
-
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-
-
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                    2
                     </div>
                     <div className="grid-td">
                     JESUS ALBERTO CORONADO
@@ -186,7 +117,7 @@ class Grid extends Component{
 
 
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                    3
                     </div>
                     <div className="grid-td">
                     JESUS ALBERTO CORONADO
@@ -220,7 +151,7 @@ class Grid extends Component{
 
 
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                    4
                     </div>
                     <div className="grid-td">
                     JESUS ALBERTO CORONADO
@@ -254,142 +185,7 @@ class Grid extends Component{
 
 
 
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
 
-
-
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-
-
-
-                    <div className="grid-td">
-                        JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                        JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                         JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                         JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                         JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-
-
-                    <div className="grid-td">
-                        JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                        JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                         JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                         JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                         JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
 
 
                 </div>
