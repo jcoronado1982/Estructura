@@ -1,13 +1,24 @@
 :Root{
-    --Columns:3;
-    --Rows:4;
+    --columns:1;
+    --rows:1;
+}
+.contenedor{
+    width:100%;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 100%;
+  height:200px;
+  overflow:auto;
+  width:100%;
 }
 
-
-.Grid{
-    background:lightgray;
-    display: grid;    
-    grid-template-columns: repeat(var(--columns),1fr);
-    grid-template-rows:25px;
+.grid-content-th{
+   display: grid;
+   grid-template-columns:repeat(var(--columns),1fr)
 }
- 
+.grid-content-td{
+    display: grid;
+    grid-template-columns:repeat(var(--rows),1fr) ;
+   
+ }

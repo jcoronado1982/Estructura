@@ -9,7 +9,7 @@ class Loading extends Component{
         this.state={
             show: props.show
         }
-        setTimeout(this.disable.bind(this), 3000);
+        setTimeout(this.disable.bind(this), 300);
     }
   
     disable() {
