@@ -18,7 +18,7 @@
    display: grid;
    grid-template-columns:repeat(var(--columns),1fr);
     color: #fff;
-    background-color:#000;
+    background:#333;
     text-decoration: none;
     
 }

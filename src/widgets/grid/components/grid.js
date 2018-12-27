@@ -43,7 +43,7 @@ class Grid extends Component{
                         borrow
                     </div>
                     <div className="grid-th">
-                        borrow ****
+                        borrow 
                     </div>
                     
                 </div>
