@@ -7,7 +7,9 @@ class Header extends Component{
     render(){
         return(
             <div className="item header">
-            
+                <div className="logo">
+                    XRUBI
+                </div>
                 <nav>
                     <ul>
                         <li>
