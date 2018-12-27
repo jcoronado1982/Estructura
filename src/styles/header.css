@@ -6,6 +6,8 @@ ul {
     overflow: hidden;
     height: 50px;
     background: rgba(45,45,45,0.98);
+    opacity: 0.5;
+    filter:  alpha(opacity=50);
   }
   .floatleft {
     float:left;
