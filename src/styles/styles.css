@@ -11,6 +11,6 @@ body {font-family: Arial;margin: 0px}
   }
   .contenido {padding: 0px; grid-area: contenido;border-bottom: 1px solid red;}
   .item {padding: 0px; }
-  .item:nth-of-type(2) {padding: 0px; }
+  
   .item .Module {background: rgb(93, 194, 185);}
   
