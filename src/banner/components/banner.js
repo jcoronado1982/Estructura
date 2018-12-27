@@ -4,7 +4,9 @@ class Banner extends Component{
 
     render(){
         return(
-            <div className="item banner">banner</div>                 
+            <div className="item banner">
+                <img src="../../../img/banner/banner1.jpg" />
+            </div>                 
         )
     }
 }
