@@ -3,44 +3,23 @@ import '../css/login.css';
 import UserName from './username';
 import Password from './password';
 
-class Login extends Component {
-  
-  constructor(){
-    super();
-    this.state={
-      Visible:true,
-      };
-      this.hide=this.hide.bind(this);
-  }
-  
-hide(state,props){
-   this.setState({
-Visible:false,
-   });
-  
-  }
-
-  render() {
-    if(this.state.Visible)
-    {
-      
+function Login (props) {  
     return (
-      <div className="loginBackground">
-        
+      <div className="loginBackground">   {props.children}     
           <div className="loginWindow">
             <div>
             <div className="login">
               <div className="section1">
                 <div className="option">
-                    boton inicia facebook
+                    boton inicia facebook                    
                 </div>
                 <div className="option">
                     boton inicia twitter
                 </div>
                 <div className="option">
-                    <div className="close" onClick={this.hide}>
+                  <div className="close" onClick={props.handleCloseLogin}>
                       close
-                    </div>
+                  </div>
                 </div>
               </div>
               <div className="section2">
@@ -67,16 +46,8 @@ Visible:false,
               </div>
             </div>
           </div>
-        </div>
- 
-        
-        </div>
-      
-     )
-    }else{
-      return(null)
-    }
-  }
+        </div>         
+        </div>      
+     )      
 }
-
 export default Login;

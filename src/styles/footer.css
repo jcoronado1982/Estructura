@@ -4,61 +4,85 @@
   position: relative;
   top: 50%;
 }
-
 .item .footer {
   grid-area: footer;
-   background-color: brown;
+   background-color: rgb(206, 206, 206);
    display: grid;
-   grid-template: 25px 25px 25px 25px 25px 25px 25px / 33.333% 33.333% 33.333%;
-   grid-template-areas: "info risks simulator"
-                        "info risks simulator"
-                        "how feescomm contact"
-                        "req feescomm contact"
-                        "terms chat about"
-                        "freq chat about"
+   grid-template: 150px 25px / repeat(3,1fr);
+   grid-template-areas: "info area1 area2"
                         "rights rights rights";
   }
+  .item .footer .area1{
+    grid-area: area1;
+  display:grid;
+  grid-template-rows: repeat(3,1fr) ;
+  padding:5px;
+  grid-template-areas: 
+                       "risks"
+                       "feescomm"
+                       "chat";   
+  }
+  .item .footer .area2{
+    grid-area: area2;
+  display:grid;
+  grid-template-rows: repeat(3,1fr) ;
+  padding:5px;
+  grid-template-areas: 
+                       "simulator"
+                       "contact"
+                       "about";   
+  }
   .item .footer .info {
-    grid-area: info;
-    
+  grid-area: info;
+  display:grid;
+  grid-template-rows: repeat(4,1fr) ; 
+  grid-template-areas: 
+                       "how"
+                       "req"
+                       "terms "
+                       "freq";    
   }
-  .item .footer .how {
-    grid-area: how;
-    
+  .item .footer .info .how {
+    grid-area: how;    
   }
-  .item .footer .req {
-    grid-area: req;
-    
+  .item .footer .info .req {
+    grid-area: req;    
   }
-  .item .footer .terms {
-    grid-area: terms;
-    
+  .item .footer .info .terms {
+    grid-area: terms;    
   }
-  .item .footer .freq {
-    grid-area: freq;
-    
+  .item .footer .info .freq {
+    grid-area: freq;    
   }
-
-  .item .footer .risks {
-    grid-area: risks;
-    
+  .item .footer .area1 .risks {
+    grid-area: risks;    
   }
-  .item .footer .feescomm {
+  .item .footer .area1 .feescomm {
     grid-area: feescomm;
      }
-  .item .footer .chat {
+  .item .footer .area1 .chat {
     grid-area: chat;
     }
-  .item .footer .simulator {
+  .item .footer .area2 .simulator {
     grid-area: simulator;
     }
-  .item .footer .contact {
+  .item .footer .area2 .contact {
     grid-area: contact;
     }
-  .item .footer .about {
+  .item .footer .area2 .about {
     grid-area: about;
     }
   .item .footer .rights {
     grid-area: rights;
-    background-color: darkred;
+    background-color: #b7b7b7;
+   }
+   .linkStyle{
+    text-decoration: none;
+    padding:10px;
+    color: black;
+    display: block;
+    text-align: center;
+   }
+   .linkStyle:hover{
+    background-color: #a3a3a3;
    }

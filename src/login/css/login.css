@@ -35,8 +35,10 @@
                         "section3";
   }
   .close{
-
     float:right;
+  }
+  .close:hover{
+background-color:white;
   }
  
   .login .section1 {
@@ -88,7 +90,7 @@
                          "register";
   }
 .login .section3 .option:nth-of-type(1){
-    grid-area: noaccount;
+ grid-column:1/2;
 }
 .login .section3 .option:nth-of-type(2){
     grid-area: register;

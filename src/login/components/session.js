@@ -9,44 +9,49 @@ class LoginHeader extends Component {
     super();
     const t=0;
     this.state={
-      Login:true,
-      SignOff:false,
       Text:'Login',
       Text2:'SignOff',
-      visible:false,
+      loginVisible:false,
       };
-      this.show=this.show.bind(this);
+      this.openLogin=this.openLogin.bind(this);
+      this.handleCloseLogin=this.handleCloseLogin.bind(this);
+      this.closeLogin=this.closeLogin.bind(this);
   }
-  
-show(state,props){
+  handleCloseLogin=(event)=>{
+    this.setState(
+      {
+        loginVisible:false,
+      }
+    )
+  }
+openLogin(state,props){
    this.setState({
     Text:'Log-in',
-    visible:true,
-    
-   });
-  
+    loginVisible:true,
+   });  
+  }
+  closeLogin=(event)=>{
+    this.setState(
+      {
+        loginVisible:false
+      }
+    )
   }
 
   render() {    
-    if(this.state.visible)
-    {
-      return (
-        <div onClick={this.show} className="log-in">
-          {this.state.Text}
-          <div>
-            <Window visible={true}/>
-          </div>
-        </div>
-       )
-    }else{
-      return (
-        <div onClick={this.show} className="log-in">
-          {this.state.Text}
-        </div>
-       )
-    }
+    return(
+
+      this.state.loginVisible?    
+      <div  className="log-in">
+        {this.state.Text2}
+          <Window handleCloseLogin={this.closeLogin}/>
+      </div>
+     :
+      <div onClick={this.openLogin} className="log-in">
+        {this.state.Text}
+      </div>
+    )  
+    
     
   }
-}
-
-export default LoginHeader;
+}    export default LoginHeader;
