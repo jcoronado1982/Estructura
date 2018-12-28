@@ -28,10 +28,12 @@ import Req from '../info/requirements/components/req';
 import Terms from '../info/terms-and-conditions/components/terms';
 import Freq from '../info/frequent/components/freq';
 function routes() {
+  let activador=true;
   return (
       <section className="container">
         <HandleError>
-          <Loading/>
+          <Loading show={activador}/>
+          
           <Header/>
           <div className="item contenido">
             <Switch>
@@ -61,6 +63,7 @@ function routes() {
               <Route component={NotFound} />
             </Switch>
           </div>
+          {activador}
           <Footer/>
         </HandleError>
        </section>

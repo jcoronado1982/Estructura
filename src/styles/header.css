@@ -1,4 +1,6 @@
-.header {grid-area: header;}
+.header {grid-area: header;position:fixed; width: 100%;padding: 0px; 
+  background: rgba(45,45,45,0.98);
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -6,8 +8,6 @@ ul {
     overflow: hidden;
     height: 50px;
     background: rgba(45,45,45,0.98);
-    opacity: 0.9;
-    filter:  alpha(opacity=90);
   }
   .floatleft {
     float:left;
@@ -53,6 +53,5 @@ ul {
   position: fixed;
   width: 100%;
 }
-.item:nth-of-type(2) {padding: 0px; 
-  background: rgba(45,45,45,0.98);
+.item:nth-of-type(2) {
 }
