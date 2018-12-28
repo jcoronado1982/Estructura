@@ -2,8 +2,12 @@ import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
 import Session from '../login/components/session';
-class Header extends Component{
+import {connect} from 'react-redux';
 
+class Header extends Component{
+state={
+    cargando:true,
+}
     render(){
         return(
             <div className="item header">
@@ -48,4 +52,5 @@ class Header extends Component{
         )
     }
 }
+
 export default Header;

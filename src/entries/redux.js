@@ -1,14 +1,24 @@
 import { createStore } from 'redux';
 
 const initialState = [
-  {
-    "title": ""
+  {show:true,
   }
 ]
+function handleLoading(event){
+  event.preventDefault();
+  store.dispatch(
+    {
+      type:'cargar',
+      payload:{
+        show:true,
+      }
+    }
+  )
+}
 
 const reducer = function(state, action) {
   switch (action.type) {
-    case 'ADD_SONG':
+    case 'cargar':
       return [...state, action.payload]
     default:
       return state

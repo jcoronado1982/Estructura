@@ -1,13 +1,14 @@
 import React, { Component} from 'react';
 import '../css/loading.css';
 import Gif from '../../../img/loading/gif-transp-1,5.gif';
-let myVar;
+import {connect} from 'react-redux';
 class Loading extends Component{
     
     constructor(props){
         super(props);
         this.state={
-            show: props.show
+            show: this.props.show
+            //show:props.state
         }
         setTimeout(this.disable.bind(this), 300);
     }
@@ -35,5 +36,10 @@ class Loading extends Component{
         )     
     }
 }
+function mapStateToProps(state,props){
+    return{
+        show: state.show
+    }
+}
 
-export default Loading;
+export default connect(mapStateToProps)(Loading);

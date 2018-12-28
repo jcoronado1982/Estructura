@@ -32,7 +32,7 @@ function routes() {
   return (
       <section className="container">
         <HandleError>
-          <Loading show={true}/>
+          <Loading/>
           <Header/>
           <div className="item contenido">
             <Switch>
