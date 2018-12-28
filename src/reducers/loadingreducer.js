@@ -1,17 +1,15 @@
-
 const initialState={
     show:true,
 }
 
-function loadingreducer(state,action){
-    state =initialState;
+function LoadingReducer(state = initialState,action){
     switch(action.type){
-        case 'cargar':
-        return initialState.show
+        case 'reload':
+        return initialState
         case 'reposo':
-        return initialState.show
+        return initialState
         default:
-        return initialState.show
+        return initialState
     }
 }
-export default loadingreducer;
+export default LoadingReducer;

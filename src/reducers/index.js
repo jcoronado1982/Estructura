@@ -1,6 +1,6 @@
 import data from './data';
 import modal from './modal';
-import loadingreducer from './loadingreducer';
+import loadingreducer from './loadingReducer';
 
 import { combineReducers } from 'redux';
 

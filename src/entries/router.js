@@ -27,7 +27,6 @@ import How from '../info/how/components/how';
 import Req from '../info/requirements/components/req';
 import Terms from '../info/terms-and-conditions/components/terms';
 import Freq from '../info/frequent/components/freq';
-
 function routes() {
   return (
       <section className="container">

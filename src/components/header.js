@@ -2,12 +2,16 @@ import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
 import Session from '../login/components/session';
-import {connect} from 'react-redux';
 
+import {connect} from 'react-redux';
+import { pageChange } from '../actions/pageChange';
 class Header extends Component{
-state={
-    cargando:true,
-}
+    HandleChange=event =>{
+        this.props.dispatch({
+            type:'reload',
+        })
+    }
+    
     render(){
         return(
             <div className="item header">
@@ -16,7 +20,7 @@ state={
                 </div>
                 <nav>
                     <ul>
-                        <li>
+                        <li onClick={this.HandleChange} >
                             <NavLink to="/" activeClassName="is-selected">
                                 Lend
                             </NavLink>
@@ -32,7 +36,7 @@ state={
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Auction" activeClassName="is-selected">
+                            <NavLink to="/Auction"activeClassName="is-selected">
                                 In auction 
                             </NavLink>
                         </li>
@@ -52,5 +56,4 @@ state={
         )
     }
 }
-
-export default Header;
+export default connect()(Header);

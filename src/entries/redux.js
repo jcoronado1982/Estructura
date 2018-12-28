@@ -18,7 +18,7 @@ function handleLoading(event){
 
 const reducer = function(state, action) {
   switch (action.type) {
-    case 'cargar':
+    case 'reload':
       return [...state, action.payload]
     default:
       return state
