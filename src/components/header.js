@@ -2,13 +2,18 @@ import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
 import Session from '../login/components/session';
-
 import {connect} from 'react-redux';
-import { pageChange } from '../actions/pageChange';
 class Header extends Component{
-    HandleChange=event =>{
+    HandleChangeLend=event =>{
         this.props.dispatch({
-            type:'reload',
+            type:'lend',
+            load:false,
+        })
+    }
+    HandleChangeBorrow=event =>{
+        this.props.dispatch({
+            type:'borrow',
+            load:true,
         })
     }
     
@@ -20,12 +25,12 @@ class Header extends Component{
                 </div>
                 <nav>
                     <ul>
-                        <li onClick={this.HandleChange} >
+                        <li onClick={this.HandleChangeLend} >
                             <NavLink to="/" activeClassName="is-selected">
                                 Lend
                             </NavLink>
                         </li>
-                        <li>
+                        <li onClick={this.HandleChangeBorrow}>
                             <NavLink to="/Borrow" activeClassName="is-selected">
                                 Borrow
                             </NavLink>

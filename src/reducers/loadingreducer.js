@@ -1,15 +1,12 @@
-const initialState={
-    show:true,
-}
 
-function LoadingReducer(state = initialState,action){
+function LoadingReducer(state,action){
     switch(action.type){
         case 'reload':
-        return initialState
+        {return state}
         case 'reposo':
-        return initialState
+        return state
         default:
-        return initialState
+        return state
     }
 }
 export default LoadingReducer;
