@@ -7,186 +7,93 @@ class Grid extends Component{
     constructor(){
         super();
         let htmlStyles = window.getComputedStyle(document.querySelector("html"));
-        document.documentElement.style.setProperty("--columns", 10);
-        document.documentElement.style.setProperty("--rows", 10);
+        document.documentElement.style.setProperty("--columns", 5);
+        document.documentElement.style.setProperty("--rows", 5);
     }
     render(){
         return(
          <div className="contenedor">
-            <div className="grid nuevageneral">
+            <div className="grid">
                 <div className="grid-content-th">
                     <div className="grid-th">
-                        Title
+                        Lender
                     </div>
                     <div className="grid-th">
-                        name
+                       Loan Method
                     </div>
                     <div className="grid-th">
-                        borrow
+                       Requirements
                     </div>
                     <div className="grid-th">
-                        borrow
+                        Amount
                     </div>
                     <div className="grid-th">
-                        borrow
+                        
                     </div>
-                    <div className="grid-th">
-                        Title
-                    </div>
-                    <div className="grid-th">
-                        name
-                    </div>
-                    <div className="grid-th">
-                        borrow
-                    </div>
-                    <div className="grid-th">
-                        borrow
-                    </div>
-                    <div className="grid-th">
-                        borrow 
-                    </div>
-                    
                 </div>
                 <div className="grid-content-td nuevaclase" id="contenido">
                     <div className="grid-td">
-                       1
+                        Jesús Alberto Coronado
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Loan with guarantee
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Have a good reputation
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        $10.000.000
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        <button>borrow</button>
+                    </div> 
+
+                     <div className="grid-td">
+                        Jesús Alberto Coronado
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Loan with guarantee
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Have a good reputation
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        $10.000.000
+                    </div>
+                    <div className="grid-td">
+                        <button>borrow</button>
                     </div>
 
-                    <div className="grid-td">
-                    2
+                     <div className="grid-td">
+                        Jesús Alberto Coronado
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Loan with guarantee
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Have a good reputation
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        $10.000.000
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        <button>borrow</button>
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Jesús Alberto Coronado
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Loan with guarantee
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
+                        Have a good reputation
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-
-
-
-                    <div className="grid-td">
-                    3
+                        $10.000.000
                     </div>
                     <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-
-
-                    <div className="grid-td">
-                    4
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                  
-                   
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-                    <div className="grid-td">
-                    JESUS ALBERTO CORONADO
-                    </div>
-
-
-
-
-
+                        <button>borrow</button>
+                    </div>                 
 
                 </div>
               
