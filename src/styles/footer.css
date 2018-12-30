@@ -1,81 +1,121 @@
-.footer {grid-area: footer;}
+.footer {grid-area: footer; }
+.backgroundFooter{
+  border-top: 1px solid #ccc;
+  background: #f2f2f2;
+}
 .verticalCenter {
   margin: 0;
   position: relative;
   top: 50%;
 }
 .item .footer {
-  grid-area: footer;
-   background-color: rgb(206, 206, 206);
-   display: grid;
-   grid-template: 37px 37px 37px 37px 25px / repeat(3,1fr);
-   grid-template-areas: "how risks simulator"
-                        "req feescomm contact"
-                        "terms chat about"
-                        "freq none none"
-                        "rights rights rights";
+    grid-area: footer;
+    padding: 20px;
+    font-size: 12px;
+    display: grid;
+    grid-template: 35px 35px 35px 35px 35px / repeat(3,1fr);
+    grid-template-areas: "about caution support"
+                         "how risks chat"
+                         "req feescomm contact"
+                         "terms none aboutUs"
+                         "freq none simulator";
   }
+  .centerFooter{
+    width: 65%;
+    margin: 0px auto;
+  }
+  .item .footer .about {
+    grid-area: about;  
+    display:block;
+    padding: 10px; 
+    font-weight: bold;
+  }
+
+  .item .footer .caution {
+    grid-area: caution;  
+    display:block;
+    padding: 10px;  
+    font-weight: bold;
+  }
+
+  .item .footer .support {
+    grid-area: support;  
+    display:block;
+    padding: 10px;  
+    font-weight: bold;
+  }
+
   .item .footer .how {
     grid-area: how;  
     display:block;  
-    text-align: center;
+    padding: 10px;
   }
   .item .footer .req {
     grid-area: req;   
-    display:block; 
-    text-align: center;
+    display:block;
+    padding: 10px; 
   }
   .item .footer .terms {
     grid-area: terms;  
-    display:block; 
-    text-align: center; 
+    display:block;
+    padding: 10px; 
   }
   .item .footer .freq {
     grid-area: freq;  
-    display:block;  
-    text-align: center;
+    display:block;
+    padding: 10px;  
   }
   .item .footer .risks {
     grid-area: risks;    
     display:block;
-    text-align: center;
+    padding: 10px;
   }
   .item .footer .feescomm {
     grid-area: feescomm;
     display:block;
-    text-align: center;
-     }
+    padding: 10px;
+  }
   .item .footer .chat {
     grid-area: chat;
     display:block;
-    text-align: center;
-    }
+    padding: 10px;
+  }
   .item .footer .simulator {
     grid-area: simulator;
     display:block;
-    text-align: center;
-    }
+    padding: 10px;
+  }
   .item .footer .contact {
     grid-area: contact;
     display:block;
-    text-align: center;
-    }
-  .item .footer .about {
-    grid-area: about;
+    padding: 10px;
+  }
+  .item .footer .aboutUs {
+    grid-area: aboutUs;
     display:block;
-    text-align: center;
-    }
-  .item .footer .rights {
+    padding: 10px;
+  }
+  .item .rights {
     grid-area: rights;
-    display:block;
-    text-align: center;
-    background-color: #b7b7b7;
+    color: #fff;
+    background:rgba(45,45,45,0.98);
+    height: 30px;
+    padding-top: 10px;
+    font-size: 12px;
    }
    .linkStyle{     
     text-decoration: none;
     color: black;
     
    }
-   .linkContainer{       
-     padding-top: 9.25px;
-   }
+  .footerLogo{
+    width: 14%;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .copyRights{
+    width: 76%;
+    float: left;
+    
+  }

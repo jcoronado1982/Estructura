@@ -1,19 +1,14 @@
 body {font-family: Arial;margin: 0px}
 .container {
     display: grid;
-    /* grid-template: auto 1fr auto/ 1fr 1fr; */
-    grid-template: 50px 1fr 175px/ 1fr 1fr;
+    grid-template: 50px 1fr 280px/ 1fr 1fr;
     grid-gap: 0px;
     height: 100vh;
     grid-template-areas: "header header"
                           "contenido contenido"
                           "footer footer";
   }
-  .contenido {padding: 0px; grid-area: contenido;border-bottom: 1px solid red;}
+  .contenido {padding: 0px; grid-area: contenido;}
   .item {padding: 0px;}
-  
+  /* que es eso de clase module*/
   .item .Module {background: rgb(93, 194, 185);}
-  
-.item:nth-of-type(3) {
-    background-color: white;
-}

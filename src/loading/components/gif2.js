@@ -9,7 +9,7 @@ class Gif2 extends Component{
             show: true,
             //show:props.state
         }//setTimeout(this.enable.bind(this), 3000);  
-        setTimeout(this.disable.bind(this), 3000);                             
+        setTimeout(this.disable.bind(this), 300);                             
     }  
     disable() {
         this.setState({ show: false });
