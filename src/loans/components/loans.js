@@ -32,8 +32,36 @@ class Loans extends Component{
                 <div>
                     <Grid data={this.state.data}/>
                 </div>
-                
-                
+                <div className="appTitle marginGrid2">
+                    Exchange of loans in Bogota
+                </div>
+                <div>
+                    <Grid data={this.state.data}/>
+                </div>
+                <div>
+                    <div>
+                        <div className="appTitle">
+                            Top of lenders
+                        </div>
+                        <div>
+                            <Grid data={this.state.data}/>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="appTitle">
+                            Top of customers
+                        </div>
+                        <div>
+                            <Grid data={this.state.data}/>
+                        </div>
+                    </div>
+                    <div className="appTitle marginGrid2">
+                        Last loans
+                    </div>
+                    <div>
+                        <Grid data={this.state.data}/>
+                    </div>
+                </div>
             </div>  
             
         )
