@@ -12,3 +12,26 @@ body {font-family: Arial;margin: 0px}
   .item {padding: 0px;}
   /* que es eso de clase module*/
   .item .Module {background: rgb(93, 194, 185);}
+  button{
+    font-size: 17px;
+    line-height: 1.52947;
+    font-weight: 400;
+    background: #0070c9;
+    background: -webkit-linear-gradient(#42a1ec, #0070c9);
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    text-align: center;
+    white-space: nowrap;
+
+  }
