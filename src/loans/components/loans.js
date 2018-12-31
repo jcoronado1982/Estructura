@@ -9,8 +9,8 @@ class Loans extends Component{
    
     render(){
         return(
-            <div className="loansContent">
-                <div className="loansTitle">
+            <div className="appContent">
+                <div className="appTitle">
                     Borrows money in Bogota
                 </div>
                 <div>

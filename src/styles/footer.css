@@ -21,7 +21,7 @@
                          "freq none simulator";
   }
   .centerFooter{
-    width: 65%;
+    width: 80%;
     margin: 0px auto;
   }
   .item .footer .about {
@@ -109,13 +109,13 @@
     
    }
   .footerLogo{
-    width: 14%;
+    width: 13%;
     float: left;
     text-align: right;
     padding-right: 10px;
   }
   .copyRights{
-    width: 76%;
+    width: 86%;
     float: left;
     
   }
