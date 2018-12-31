@@ -5,6 +5,7 @@ class Loans extends Component{
     constructor(props){
         super(props);
        let data={campos:['nombre','apellido','cedula','precio','color'],anchos:['20px','50px','cedula','precio','color']}
+       //alert(data);
     }
    
     render(){
@@ -14,7 +15,7 @@ class Loans extends Component{
                     Borrows money in Bogota
                 </div>
                 <div>
-                    <Grid />
+                    <Grid data={true}/>
                 </div>
             </div>  
             

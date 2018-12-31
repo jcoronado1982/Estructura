@@ -1,8 +1,6 @@
 import React, { Component} from 'react';
 import '../css/grid.css';
 
-
-
 class Grid extends Component{
     constructor(){
         super();

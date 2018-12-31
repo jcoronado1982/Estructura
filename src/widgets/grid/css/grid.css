@@ -18,7 +18,9 @@
    display: grid;
    grid-template-columns:repeat(var(--columns),1fr);
    color: #000;
-   background:#f2f2f2;
+   background:#f9f9f9;
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
     
 }
 .grid:nth-of-type(0) {background: blue;padding: 0px; /*grid-template-columns*/}
