@@ -5,21 +5,85 @@ class Loans extends Component{
     constructor(props){
         super(props);
        
-        let result=[{
-                    data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',' borrow']
-                   },{
-                    data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
-                   },{
-                    data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
-                   },{
-                    data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
-                   }];
-        let data={
+        let gridLoans={
             title:['Lender','Loan Method','Requirements','Amount',''],
-            data:result
-        };
+            data:[
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',' borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    }
+                ]
+            };
+        let gridExchangeLoans={
+            title:['Lender','Client','Loan Method','Amount',''],
+            data:[
+                    {
+                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Loan with guarantee','$10.000.000',' Request Transfer']
+                    }
+                ]
+            };
+        let gridTopLenders={
+            title:['Lender','Reputation','Amount','Quantity',''],
+            data:[
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',' borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    }
+                ]
+            };
+        let gridTopCustomers={
+            title:['Client','Reputation','Amount','Quantity',''],
+            data:[
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',' borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                    }
+                ]
+            };
+        let gridLastLoans={
+            title:['Lender','Client','Amount','',''],
+            data:[
+                    {
+                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Have a good reputation','$10.000.000',' borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Have a good reputation','$10.000.000','borrow']
+                    },
+                    {
+                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Have a good reputation','$10.000.000','borrow']
+                    }
+                ]
+            };
        this.state={
-        data: data
+        gridLoans: gridLoans,
+        gridExchangeLoans: gridExchangeLoans,
+        gridTopLenders: gridTopLenders,
+        gridTopCustomers: gridTopCustomers,
+        gridLastLoans: gridLastLoans
        }
     }
    
@@ -30,21 +94,21 @@ class Loans extends Component{
                     Borrows money in Bogota
                 </div>
                 <div>
-                    <Grid data={this.state.data}/>
+                    <Grid data={this.state.gridLoans}/>
                 </div>
                 <div className="appTitle marginGrid2">
                     Exchange of loans in Bogota
                 </div>
                 <div>
-                    <Grid data={this.state.data}/>
+                    <Grid data={this.state.gridExchangeLoans}/>
                 </div>
-                <div>
+                <div className="gridDoble">
                     <div>
                         <div className="appTitle">
                             Top of lenders
                         </div>
                         <div>
-                            <Grid data={this.state.data}/>
+                            <Grid data={this.state.gridTopLenders}/>
                         </div>
                     </div>
                     <div>
@@ -52,15 +116,15 @@ class Loans extends Component{
                             Top of customers
                         </div>
                         <div>
-                            <Grid data={this.state.data}/>
+                            <Grid data={this.state.gridTopCustomers}/>
                         </div>
                     </div>
-                    <div className="appTitle marginGrid2">
-                        Last loans
-                    </div>
-                    <div>
-                        <Grid data={this.state.data}/>
-                    </div>
+                </div>
+                <div className="appTitle marginGrid2">
+                    Last loans
+                </div>
+                <div>
+                    <Grid data={this.state.gridLastLoans}/>
                 </div>
             </div>  
             

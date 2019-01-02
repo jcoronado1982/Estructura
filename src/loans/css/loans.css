@@ -4,3 +4,11 @@
 .marginGrid2{
     margin-top: 50px;
 }
+
+.gridDoble{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;  
+    height: auto;
+    margin-top: 50px;
+  }

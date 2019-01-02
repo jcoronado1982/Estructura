@@ -5,8 +5,8 @@ class Grid extends Component{
     constructor(props){
         super(props);
         let htmlStyles = window.getComputedStyle(document.querySelector("html"));
-        document.documentElement.style.setProperty("--columns", 5);
-        document.documentElement.style.setProperty("--rows", 5);
+        document.documentElement.style.setProperty("--columns", this.props.data.title.length);
+        document.documentElement.style.setProperty("--rows", this.props.data.title.length);    
     }
     dataList = () => {
         let result = []
@@ -27,7 +27,7 @@ class Grid extends Component{
                      {title.map(title => <div className="grid-th"><div className="grid-th-padd">{title}</div></div>)}
                 </div>
                 <div className="grid-content-td">
-                    {this.dataList()}
+                     {this.dataList()}
                 </div>
             </div>
         </div>
