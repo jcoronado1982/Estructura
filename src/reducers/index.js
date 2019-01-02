@@ -5,11 +5,11 @@ import loadingreducer from './loadingReducer';
 import { combineReducers } from 'redux';
 function LoadingReducer(state,action){
   switch(action.type){
-      case 'lend':
+      case 'isLoading':
       {return state={
         load:false,
       }}
-      case 'borrow':
+      case 'isLoaded':
       {return state={
         load:true,
       }}

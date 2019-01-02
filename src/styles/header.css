@@ -33,7 +33,7 @@ ul {
     background-color: #111;
   }
 
-  .logo {
+  .Navigation_logo {
     width: 15%;
     float: left;
     font-family: 'smc';
@@ -53,5 +53,47 @@ ul {
   position: fixed;
   width: 100%;
 }
-.item:nth-of-type(2) {
+.Navigation_menu{
+  height:0px;
+}
+@media only screen and (max-width: 768px)
+{
+  .Navigation_logo{
+  /* color:#dcf442; */
+text-align: center;
+display:block;
+padding-top:10px;
+padding-right:0px;
+height: 40px;
+align:center;
+width: 100%;}
+
+.Navigation_menu{
+  position:absolute;
+  left:90%;
+  float:right;
+  display:block;
+  padding-top:15px;
+  padding-right:20px;
+  height: 35px;
+  color:white;
+  align:center;
+  width: 5%;
+}
+.Navigation_menu:hover{
+  background-color: #111;
+}
+.Navigation_items{
+  display: none;
+  position:absolute;
+  left:85%;
+  padding-top:50px;
+  height:330px;
+  width:15%;
+}
+.Navigation_items .Navigation_list{
+  display: none;
+  height:330px;
+  width:1fr;
+}
 }
