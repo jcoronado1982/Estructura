@@ -6,8 +6,9 @@ import {connect} from 'react-redux';
 class Header extends Component{
     constructor(){
         super();
+        let htmlStyles = window.getComputedStyle(document.querySelector("html"));
         this.state ={
-            menuOpen:false,    
+            menuOpen:false,  
             text:"menu",
             };
             this.HandleMenuClick=this.HandleMenuClick.bind(this);
@@ -18,11 +19,15 @@ class Header extends Component{
     HandleMenuClick(event){
         if(this.state.menuOpen)
         {
+            document.documentElement.style.setProperty("--visibilityProp","hidden" );
+            document.documentElement.style.setProperty("--displayProp","none" );
             this.setState({
             menuOpen:false,
             text:"Close",
         })
         }else{
+            document.documentElement.style.setProperty("--visibilityProp","visible" );
+            document.documentElement.style.setProperty("--displayProp","block" );
             this.setState({
                 menuOpen:true,
                 text:"Open",
@@ -79,7 +84,7 @@ class Header extends Component{
                                 Exchange your loan
                             </NavLink>
                         </li>
-                        <li  className="floatright">
+                        <li  className="session">
                             <Session/>
                         </li>
                     </ul>

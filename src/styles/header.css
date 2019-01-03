@@ -12,7 +12,7 @@ ul {
   .floatleft {
     float:left;
 }
-.floatright {
+.session {
     float:right;
 }
   li {
@@ -22,7 +22,6 @@ ul {
   li a {
     display: block;
     color: #fff;
-    text-align: center;
     padding: 16px;
     text-decoration: none;
     font-size: 14px;
@@ -66,32 +65,45 @@ ul {
       height: 40px;
       width: 100%;
     }
-
-.Navigation_menu{
-  position:absolute;
-  left:90%;
-  float:right;
-  display:block;
-  padding-top:15px;
-  padding-right:20px;
-  height: 35px;
-  color:white;
-  width: 5%;
-}
-.Navigation_menu:hover{
-  background-color: #111;
-}
-.Navigation_items{
-  display: none;
-  position:absolute;
-  left:85%;
-  padding-top:50px;
-  height:330px;
-  width:15%;
-}
-.Navigation_items .Navigation_list{
-  display: none;
-  height:330px;
-  width:1fr;
-}
+    .session{
+      clear: both;
+      float: left;
+    }
+    li {
+      clear: both;
+    }
+    :Root{
+      --displayProp:none;
+      --visibilityProp:hidden;
+    }
+    .Navigation_menu{
+      position:absolute;
+      left:90%;
+      float:right;
+      display:block;
+      padding-top:15px;
+      padding-right:20px;
+      height: 35px;
+      color:white;
+      width: 5%;
+      z-index: 997;
+    }
+    .Navigation_menu:hover{
+      background-color: #111;
+    }
+    .Navigation_items{
+      display:var(--displayProp);
+      visibility: var(--visibilityProp);
+      position:absolute;
+      right:0px;
+      padding-top:50px;
+      width:50%;
+      z-index: 995;
+    }
+    .Navigation_items .Navigation_list{
+      display: var(--displayProp);
+      visibility: var(--visibilityProp);
+      height:310px;
+      width:1fr;
+    }
 }
