@@ -27,7 +27,7 @@
     left:5px;
     top:5px;
    background:white;
-  
+   text-align: center;
    display: grid;
    grid-template: 100px 200px 100px/ 350px;
    grid-template-areas: "section1 "

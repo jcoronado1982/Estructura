@@ -118,3 +118,28 @@
     width: auto;
     float: left;
   }
+  @media only screen and (max-width: 768px)
+  {
+    .item .footer {
+      grid-area: footer;
+      padding: 20px;
+      font-size: 12px;
+      display: grid;
+      grid-template: 35px 35px 35px 35px 35px 35px 35px 35px  35px 35px 35px 35px 35px  / 1fr;
+      grid-template-areas: "about"
+                           "how"
+                           "req"
+                           "terms"
+                           "freq"
+
+                           "caution"
+                           "risks"
+                           "feescomm"                           
+
+                           "support"
+                           "chat"
+                           "contact"
+                           "aboutUs"
+                           "simulator";
+    }
+  }

@@ -71,6 +71,7 @@ ul {
     }
     li {
       clear: both;
+      width:100%;
     }
     :Root{
       --displayProp:none;
