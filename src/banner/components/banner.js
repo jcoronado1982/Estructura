@@ -6,7 +6,7 @@ class Banner extends Component{
         return(
             <div className="item banner">
                 <img className="imgBanner" src="../../../img/banner/banner1.jpg" />
-            </div>                 
+            </div>              
         )
     }
 }
