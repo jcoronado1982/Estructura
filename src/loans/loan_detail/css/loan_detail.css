@@ -14,12 +14,13 @@
     font-size: 12px;
     display: grid;
     grid-template: repeat(35px,13) / 1fr 1fr;
-    grid-template-areas: "infoLoan infoLoan";
   }
   .infoLoan{
-    grid-area: infoLoan;
+    grid-column: 1/3;
+    grid-row: 1/2;
     background-color: bisque;
     display:block;
+    height:35px;
   }
   .LoanInfoItem{      
     padding: 10px;
