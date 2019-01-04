@@ -1,0 +1,56 @@
+.detailGrid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 60% 40%;
+    grid-gap: 0px;
+    height: 100vh;
+    grid-template-areas: "loanInfo guarantee"
+                          "loanHistory loanHistory"
+                          "comments comments";
+  }
+  .loanInfo{
+
+    grid-area: loanInfo;
+    padding: 20px;
+    font-size: 12px;
+    display: grid;
+    grid-template: repeat(35px,13) / 1fr 1fr;
+    grid-template-areas: "infoLoan infoLoan";
+  }
+  .infoLoan{
+    grid-area: infoLoan;
+    background-color: bisque;
+    display:block;
+  }
+  .LoanInfoItem{      
+    padding: 10px;
+  }
+  .guarantee{
+    grid-area: guarantee;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 120px 40px 40px / 1fr;
+    grid-template-areas: "guaranteeBox";
+  }
+  .loanHistory{
+    grid-area: loanHistory;
+    text-align: center;
+    padding:50px;
+  }
+  .comments{
+    grid-area: comments;
+    background-color:#cecece;    
+  }
+  .guaranteeBox{
+      grid-area: guaranteeBox;
+      border:1px solid;
+      display: grid;
+    grid-template: repeat(30px,4) / 1fr;
+    grid-template-areas: "guaranteeBoxtitle";
+  }
+  .guaranteeBoxtitle{
+grid-area: guaranteeBoxtitle;
+  }
+  .guaranteeBoxItem{
+      padding-left: 10%;
+  }

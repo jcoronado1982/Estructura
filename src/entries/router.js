@@ -27,6 +27,8 @@ import How from '../info/how/components/how';
 import Req from '../info/requirements/components/req';
 import Terms from '../info/terms-and-conditions/components/terms';
 import Freq from '../info/frequent/components/freq';
+
+import loanDetail from '../loans/loan_detail/loan_detail';
 function routes() {
   let activador=true;
   return (
@@ -55,6 +57,8 @@ function routes() {
               <Route exact path="/requirements" component={Req} />
               <Route exact path="/terms-and-conditions" component={Terms} />
               <Route exact path="/frequent" component={Freq} />
+
+              <Route exact path="/loan_detail" component={loanDetail} />
 
               {/* <Route exact path="/Login" component={Login} /> */}
 

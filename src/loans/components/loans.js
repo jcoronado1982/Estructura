@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import { Link, NavLink } from'react-router-dom';
 import '../css/loans.css';
 import Grid from '../../widgets/grid/components/grid';
 class Loans extends Component{
@@ -9,16 +10,16 @@ class Loans extends Component{
             title:['Lender','Loan Method','Requirements','Amount',''],
             data:[
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',' borrow']
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     }
                 ]
             };

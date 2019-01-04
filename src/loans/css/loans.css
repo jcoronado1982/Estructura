@@ -12,6 +12,19 @@
     height: auto;
     margin-top: 50px;
   }
+  .linkButton{
+    border-radius: 2px;
+    padding: 8px 20px 8px;
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    cursor: pointer;
+    background: #5887f5;
+    border: none;
+  }
   @media only screen and (max-width: 768px)
 {
 .gridDoble{

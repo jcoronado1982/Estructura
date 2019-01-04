@@ -125,7 +125,7 @@
       padding: 20px;
       font-size: 12px;
       display: grid;
-      grid-template: 35px 35px 35px 35px 35px 35px 35px 35px  35px 35px 35px 35px 35px  / 1fr;
+      grid-template: repeat(35px,13) / 1fr;
       grid-template-areas: "about"
                            "how"
                            "req"
