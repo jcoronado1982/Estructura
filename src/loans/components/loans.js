@@ -10,10 +10,10 @@ class Loans extends Component{
             title:['Lender','Loan Method','Requirements','Amount',''],
             data:[
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<button>Borrow</button>]
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
+                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<button>Borrow</button>]
                     },
                     {
                         data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
@@ -92,7 +92,7 @@ class Loans extends Component{
         return(
             <div className="appContent">
                 <div className="appTitle marginGrid1">
-                    Borrows money in Bogota
+                    Borrows money in Bogota 
                 </div>
                 <div>
                     <Grid data={this.state.gridLoans}/>
