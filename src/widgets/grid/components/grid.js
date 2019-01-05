@@ -27,11 +27,12 @@ class Grid extends Component{
     render(){
         let id=this.props.data.key;
         let columns = this.props.data.columns;
+        let grid="grid"+id;
         let gridTd="grid-td-"+id;
         let gridTh="grid-th-"+id;
         return(
          <div className="contenedor">
-            <div className="grid">
+            <div className="grid" id={grid}>
                 <div className="grid-content-th" id={gridTd}>
                      {columns.map(columns => <div className="grid-th"><div className="grid-th-padd">{columns}</div></div>)}
                 </div>
