@@ -38,7 +38,7 @@ class Loans extends Component{
             columns:[
                         {title: 'Lender'},
                         {title: 'Client'},
-                        {title: 'AmounLoan Methodt'},
+                        {title: 'Loan Methodt'},
                         {title: 'Amount'},
                         {title: ''}
                     ]
