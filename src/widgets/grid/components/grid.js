@@ -35,7 +35,6 @@ class Grid extends Component{
                     )}
                 </div>
             </div>
-            
         </div>
         
         )

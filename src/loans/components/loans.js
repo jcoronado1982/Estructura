@@ -9,11 +9,11 @@ class Loans extends Component{
         const gridLoans={
             key:1,
             columns:[
-                        {title: 'Lender', id:'title1'},
-                        {title: 'Loan Method', id:'title2'},
-                        {title: 'Payment Deadline', id:'title3'},
-                        {title: 'Amount', id:'title4'},
-                        {title: '', id:'title5'}
+                        {title: 'Lender'},
+                        {title: 'Loan Method'},
+                        {title: 'Payment Deadline'},
+                        {title: 'Amount'},
+                        {title: ''}
                     ]
             ,
             data:[
@@ -34,11 +34,11 @@ class Loans extends Component{
         const gridExchangeLoans={
             key:2,
             columns:[
-                        {title: 'Lender', id:'title6'},
-                        {title: 'Client', id:'title7'},
-                        {title: 'AmounLoan Methodt', id:'title8'},
-                        {title: 'Amount', id:'title9'},
-                        {title: '', id:'title10'}
+                        {title: 'Lender'},
+                        {title: 'Client'},
+                        {title: 'AmounLoan Methodt'},
+                        {title: 'Amount'},
+                        {title: ''}
                     ]
             ,
             data:[
@@ -50,10 +50,10 @@ class Loans extends Component{
         const gridTopLenders={
             key:3,
             columns:[
-                        {title: 'Lender', id:'title11'},
-                        {title: 'Reputation', id:'title12'},
-                        {title: 'Amount', id:'title13'},
-                        {title: 'Quantity', id:'title14'}
+                        {title: 'Lender'},
+                        {title: 'Reputation'},
+                        {title: 'Amount'},
+                        {title: 'Quantity'}
                     ]
             ,
             data:[
@@ -71,30 +71,30 @@ class Loans extends Component{
         let gridTopCustomers={
             key:4,
             columns:[
-                        {title: 'Client', id:'title15'},
-                        {title: 'Reputation', id:'title16'},
-                        {title: 'Amount', id:'title17'},
-                        {title: 'Quantity', id:'title118'}
+                        {title: 'Client'},
+                        {title: 'Reputation'},
+                        {title: 'Amount'},
+                        {title: 'Quantity'}
                     ]
             ,
             data:[
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','8']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','30']
                     },
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','5']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','30']
                     },
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','4']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','30']
                     }
                 ]
             };
         let gridLastLoans={
             key:5,
             columns:[
-                        {title: 'Lender', id:'title19'},
-                        {title: 'Client', id:'title20'},
-                        {title: 'Amount', id:'title21'}
+                        {title: 'Lender'},
+                        {title: 'Client'},
+                        {title: 'Amount'}
                     ]
             ,
             data:[
