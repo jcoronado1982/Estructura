@@ -7,75 +7,80 @@ class Loans extends Component{
         super(props);
        
         let gridLoans={
-            title:['Lender','Loan Method','Requirements','Amount',''],
+            key:1,
+            columns:['Lender','Loan Method','Requirements','Amount',''],
             data:[
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
+                        row: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
+                        row: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
+                        row: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
+                        row: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
                     }
                 ]
             };
         let gridExchangeLoans={
-            title:['Lender','Client','Loan Method','Amount',''],
+            key:2,
+            columns:['Lender','Client','Loan Method','Amount',''],
             data:[
                     {
-                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Loan with guarantee','$10.000.000',' Request Transfer']
+                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Loan with guarantee','$10.000.000',' Request Transfer']
                     }
                 ]
             };
         let gridTopLenders={
-            title:['Lender','Reputation','Amount','Quantity',''],
+            key:3,
+            columns:['Lender','Reputation','Amount','Quantity'],
             data:[
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',' borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     }
                 ]
             };
         let gridTopCustomers={
-            title:['Client','Reputation','Amount','Quantity',''],
+            key:4,
+            columns:['Client','Reputation','Amount','Quantity'],
             data:[
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000',' borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Loan with guarantee','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','5','$10.000.000','$10.000.000']
                     }
                 ]
             };
         let gridLastLoans={
-            title:['Lender','Client','Amount','',''],
+            key:5,
+            columns:['Lender','Client','Amount'],
             data:[
                     {
-                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Have a good reputation','$10.000.000',' borrow']
+                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','$10.000.000']
                     },
                     {
-                        data: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Have a good reputation','$10.000.000','borrow']
+                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','$10.000.000']
                     }
                 ]
             };
