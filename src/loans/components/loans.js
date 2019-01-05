@@ -2,10 +2,12 @@ import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../css/loans.css';
 import Grid from '../../widgets/grid/components/grid';
+import Searcher from './searcher';
 class Loans extends Component{
     constructor(props){
         super(props);
-       
+        
+        
         const gridLoans={
             key:1,
             columns:[
@@ -114,7 +116,10 @@ class Loans extends Component{
         gridExchangeLoans: gridExchangeLoans,
         gridTopLenders: gridTopLenders,
         gridTopCustomers: gridTopCustomers,
-        gridLastLoans: gridLastLoans
+        gridLastLoans: gridLastLoans,
+        currency: 'COP',
+        country: 'CO',
+        method: 'ALL'
        }
        
     }
@@ -122,10 +127,7 @@ class Loans extends Component{
     render(){
         return(
             <div className="appContent">
-               
-
-
-
+                <Searcher  currency={this.state.currency} country={this.state.country} method={this.state.method}/>
                 <div className="appTitle marginGrid1">
                     Borrows money in Bogota 
                 </div>
