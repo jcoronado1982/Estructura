@@ -7,18 +7,8 @@ class Grid extends Component{
         let htmlStyles = window.getComputedStyle(document.querySelector("html"));
         document.documentElement.style.setProperty("--columns", this.props.data.columns.length);
         document.documentElement.style.setProperty("--rows", this.props.data.columns.length);   
-       
     }
-    dataList = () => {
-        let result = []
-        let data = this.props.data.data;
-        for (let i = 0; i < data.length; i++) {
-            for (let j = 0; j < data[i].row.length; j++) {
-                result.push( <div className="grid-td"><div className="grid-td-padd">{data[i].row[j]}</div></div>)
-            }
-        }
-        return result
-    }
+   
     componentDidMount = () => {
         let id=this.props.data.key;
         document.getElementById("grid-th-"+id).style.gridTemplateColumns="repeat("+this.props.data.columns.length+",1fr)";
@@ -26,7 +16,8 @@ class Grid extends Component{
       }
     render(){
         let id=this.props.data.key;
-        let columns = this.props.data.columns;
+        const columns = this.props.data.columns;
+        const data = this.props.data.data;
         let grid="grid"+id;
         let gridTd="grid-td-"+id;
         let gridTh="grid-th-"+id;
@@ -34,13 +25,19 @@ class Grid extends Component{
          <div className="contenedor">
             <div className="grid" id={grid}>
                 <div className="grid-content-th" id={gridTd}>
-                     {columns.map(columns => <div className="grid-th"><div className="grid-th-padd">{columns}</div></div>)}
+                    {columns.map((columns, index) => <div className="grid-th" key={index}><div className="grid-th-padd">{columns.title}</div></div>)}
                 </div>
                 <div className="grid-content-td" id={gridTh}>
-                     {this.dataList()}
+                    {data.map(data => 
+                        data.row.map((row, index) => 
+                            <div className="grid-td" key={index}><div className="grid-td-padd">{row}</div></div>
+                        )
+                    )}
                 </div>
             </div>
+            
         </div>
+        
         )
     }
 }
