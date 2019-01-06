@@ -54,19 +54,19 @@ class Loans extends Component{
             columns:[
                         {title: 'Lender'},
                         {title: 'Reputation'},
-                        {title: 'Amount'},
-                        {title: 'Quantity'}
+                        {title: 'Quantity'},
+                        {title: 'Amount'}
                     ]
             ,
             data:[
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','30']
+                        row: ['Jesús Alberto Coronado','5','30','$10.000.000']
                     },
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','24']
+                        row: ['Jesús Alberto Coronado','5','24','$8.000.00']
                     },
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','3']
+                        row: ['Jesús Alberto Coronado','5','10','$1.000.00']
                     }
                 ]
             };
@@ -75,19 +75,19 @@ class Loans extends Component{
             columns:[
                         {title: 'Client'},
                         {title: 'Reputation'},
-                        {title: 'Amount'},
-                        {title: 'Quantity'}
+                        {title: 'Quantity'},
+                        {title: 'Amount'}
                     ]
             ,
             data:[
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','30']
+                        row: ['Jesús Alberto Coronado','5','30','$8.000.000']
                     },
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','30']
+                        row: ['Jesús Alberto Coronado','5','30','$7.000.000']
                     },
                     {
-                        row: ['Jesús Alberto Coronado','5','$10.000.000','30']
+                        row: ['Jesús Alberto Coronado','5','20','$10.000.000']
                     }
                 ]
             };

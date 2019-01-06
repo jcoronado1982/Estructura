@@ -8,7 +8,7 @@
 .gridDoble{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;  
+    grid-gap: 40px;  
     height: auto;
     margin-top: 50px;
   }
