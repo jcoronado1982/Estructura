@@ -1,4 +1,6 @@
 body {  font-size: 14px; line-height: 1.42857143; font-family: Arial;margin: 0px; color: #333;}
+select:focus{ outline: none;}
+input:focus{ outline: none;}
 .container {
     display: grid;
     grid-template: 50px 1fr 280px/ 1fr 1fr;

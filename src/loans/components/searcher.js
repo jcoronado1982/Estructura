@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import '../css/searcher.css';
 
 function Searcher(props) {
     
@@ -15,11 +14,11 @@ function Searcher(props) {
     }
     
     return(
-        <div>
-            <div>
+        <div className="searcher">
+            <div className="searcher_1">
                 <input placeholder="Quantity"  />
             </div>
-            <div>
+            <div className="searcher_2">
                 <select value={props.currency} onChange={handleChangeCurrency}>
                 <option value="AFN">AFN</option>
                     <option value="ALL">ALL</option>
@@ -203,7 +202,7 @@ function Searcher(props) {
                     <option value="ZWL">ZWL</option>
                 </select>
             </div>
-            <div>
+            <div className="searcher_3">
                 <select value={props.country} onChange={handleChangeCountry}>
                     <option value="AF">Afghanistan</option>
                     <option value="AL">Albania</option>
@@ -456,7 +455,7 @@ function Searcher(props) {
                     <option value="AX">Åland Islands</option>
                 </select>
             </div>
-            <div>
+            <div className="searcher_4">
                 <select value={props.method} onChange={handleChangeMethod}>
                     <optgroup label="Loan Method">
                         <option value="ALL">All offers</option>
@@ -471,7 +470,7 @@ function Searcher(props) {
                     </optgroup>
                 </select>
             </div>
-            <div>
+            <div className="searcher_5">
                 <button>Search</button>
             </div>
         </div> 
