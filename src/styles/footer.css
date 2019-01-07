@@ -121,25 +121,11 @@
   @media only screen and (max-width: 768px)
   {
     .item .footer {
-      grid-area: footer;
-      padding: 20px;
+      padding: 10px 0px 10px 0px;
       font-size: 12px;
-      display: grid;
-      grid-template: repeat(35px,13) / 1fr;
-      grid-template-areas: "about"
-                           "how"
-                           "req"
-                           "terms"
-                           "freq"
-
-                           "caution"
-                           "risks"
-                           "feescomm"                           
-
-                           "support"
-                           "chat"
-                           "contact"
-                           "aboutUs"
-                           "simulator";
+      display: inherit;
+   }
+   .centerFooter {
+      width: 94%;
     }
   }

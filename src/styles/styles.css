@@ -41,9 +41,22 @@ input:focus{ outline: none;}
     font-weight: bold;
     font-size: 24px;
 }
+
+
+
+@media only screen and (max-width: 1024px){
+    .appContent {
+        padding: 1% 5% 50px 5%;
+    }
+}
+@media only screen and (max-width: 920px){
+    .appContent {
+        padding: 1% 2% 50px 2%;
+    }
+}   
 @media only screen and (max-width: 768px)
-  {
+{
     .container {
         grid-template: 50px 1fr auto/ 1fr 1fr;
-      }
-  }
+    }
+}
