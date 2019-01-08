@@ -6,12 +6,9 @@ const initialState = {
   search: [],
 }
 
-
-
 function data(state = initialState, action) {
   switch (action.type) {
     case 'SEARCH_VIDEO': {
-      // action.payload.query
       let results = [];
       if (action.payload.query) {
         const list = state.data.categories[2].playlist;

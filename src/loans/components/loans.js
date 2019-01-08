@@ -6,7 +6,7 @@ import Searcher from './searcher';
 class Loans extends Component{
     constructor(props){
         super(props);
-        
+        console.log(props);
         
         const gridLoans={
             key:1,

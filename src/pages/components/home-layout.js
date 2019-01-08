@@ -8,8 +8,8 @@ function HomeLayout(props) {
   return (
       <div>
         <Banner/>
-        <div className="item">
-          <Loans/>
+        <div className="item" >
+          <Loans {...props}/>
         </div>
       </div>
     )
