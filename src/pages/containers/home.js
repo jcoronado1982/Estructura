@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HomeLayout from '../components/home-layout';
 import HandleError from '../../error/containers/handle-error';
-import Modal from '../../reducers/modal';
+
 import { connect } from 'react-redux';
 class Home extends Component {
   render() {

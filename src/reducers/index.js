@@ -8,4 +8,4 @@ const rootReducer = combineReducers({
   modal
 })
 
-export default rootReducer
+export default rootReducer;

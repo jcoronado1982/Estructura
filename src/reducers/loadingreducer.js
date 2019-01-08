@@ -1,4 +1,5 @@
 
+
 function LoadingReducer(state,action){
     switch(action.type){
         case 'reload':
@@ -9,4 +10,5 @@ function LoadingReducer(state,action){
         return state
     }
 }
+
 export default LoadingReducer;
