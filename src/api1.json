@@ -1,0 +1,31 @@
+{
+  "gridApi": [
+    {
+      "Key": "1",
+      "columns": [
+        {"title": "Lender"},
+        {"title": "Loan Method"},
+        {"title": "Payment Deadline"},
+        {"title": "Amount"},
+        {"title": ""}
+      ],
+      "data":[
+        {
+          "row": ["Jesús Alberto Coronado","Loan with guarantee","Three months","$5.000.000","<NavLink to='/loan_detail' activeClassName='is-selected'><button>Borrow</button></NavLink>"]
+        },
+        {
+            "row": ["Jesús Alberto Coronado","Have a good reputation","One week","$1.000.000","<NavLink to='/loan_detail' activeClassName='is-selected'><button>Borrow</button></NavLink>"]
+        },
+        {
+            "row": ["Jesús Alberto Coronado","Have a good reputation","Two weeks","$2.000.000","<NavLink to='/loan_detail' activeClassName='is-selected'><button>Borrow</button></NavLink>"]
+        },
+        {
+            "row": ["Jesús Alberto Coronado","Loan with guarantee","One month","$3.000.000","<NavLink to='/loan_detail' activeClassName='is-selected'><button>Borrow</button></NavLink>"]
+        }
+      ]
+    }
+    
+    
+  ]
+}
+

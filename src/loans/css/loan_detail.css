@@ -1,0 +1,109 @@
+.detailGrid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 60% 40%;
+    grid-gap: 0px;
+    height: 100vh;
+    grid-template-areas: "loanInfo guarantee"
+                          "loanHistory loanHistory"
+                          "comments comments";
+  }
+  .loanInfo{
+
+    grid-area: loanInfo;
+    padding: 20px;
+    padding-left: 16%;
+    font-size: 12px;
+    display: grid;
+    grid-template: repeat(35px,13) / 1fr 1fr;
+  }
+  .infoLoan{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color:#ccc;
+    display:block;
+    height:20px;
+    padding-left: 5%;
+    padding-top: 10px;
+  }
+  .LoanInfoItem{      
+    padding: 10px;
+  }
+  .guarantee{
+    grid-area: guarantee;
+    padding: 10px;
+    padding-right: 25%;
+    padding-top: 20%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template: 150px 50px 50px / 1fr;
+    grid-template-areas: "guaranteeBox";
+  }
+  .loanHistory{
+    grid-area: loanHistory;
+    text-align: center;
+    padding:20px;
+    background-color: #e5e5e5;
+   width:80%;
+   height:60%;
+   margin:0px auto;
+  }
+  .comments{
+    grid-area: comments;   
+    background-color:#cecece;    
+  }
+  .commentDate{
+    padding-left: 0px;
+  color:#969696;
+  }
+  .commentText{
+    padding-left: 10px;
+    color:black;
+  }
+  .centerComments{
+    padding:20px;
+   width:80%;
+   margin:0px auto;
+  }
+  .guaranteeBox{
+      grid-area: guaranteeBox;
+      border:1px solid;
+      display: grid;
+    grid-template: repeat(30px,4) / 1fr;
+    grid-template-areas: "guaranteeBoxtitle";
+  }
+  .guaranteeBoxInfo{
+    padding:10px;
+  }
+  .guaranteeButton{
+    width:100%;
+    height:100%;
+  }
+  .guaranteeBoxtitle{
+grid-area: guaranteeBoxtitle;
+  }
+  .guaranteeBoxItem{
+      padding-left: 10%;
+  }
+  @media only screen and (max-width: 768px)
+{ 
+  .detailGrid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/ 100%;
+    grid-gap: 0px;
+    height: 150vh;
+    grid-template-areas: "loanInfo"
+                         "guarantee"
+                         "loanHistory"
+                         "comments";
+  }
+  .loanInfo{
+    padding:10%;
+  }
+  .guarantee{
+    padding:10%;
+    padding-top: 0%;
+  }
+  .centerComments{
+    width:90%;
+  }
+}

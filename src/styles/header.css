@@ -32,7 +32,7 @@ ul {
     background-color: #111;
   }
 
-  .Navigation_logo {
+  .navigationLogo {
     width: 15%;
     float: left;
     font-family: 'smc';
@@ -52,12 +52,13 @@ ul {
   position: fixed;
   width: 100%;
 }
-.Navigation_menu{
+.navigationMenu{
   height:0px;
+  visibility: hidden;
 }
 @media only screen and (max-width: 768px)
-{
-    .Navigation_logo{
+{    
+    .navigationLogo{
       text-align: center;
       display:block;
       padding-top:10px;
@@ -77,22 +78,28 @@ ul {
       --displayProp:none;
       --visibilityProp:hidden;
     }
-    .Navigation_menu{
+    .navigationMenuIcon{
+      padding-top: 10px;
+      padding-right: 10px;
+      float:right;
+      width:30px;
+      height:30px;
+    }
+    .navigationMenu{
+      visibility: visible;
       position:absolute;
       float:right;
       display:block;
       right: 20px;
-      padding-top: 15px;
-      height: 35px;
+      height: 50px;
       color:white;
       width: 50px;
       z-index: 997;
-      padding-left: 10px;
     }
-    .Navigation_menu:hover{
+    .navigationMenu:hover{
       background-color: #111;
     }
-    .Navigation_items{
+    .navigationItems{
       display:var(--displayProp);
       visibility: var(--visibilityProp);
       position:absolute;
@@ -101,7 +108,7 @@ ul {
       width:80%;
       z-index: 995;
     }
-    .Navigation_items .Navigation_list{
+    .navigationItems .navigationList{
       display: var(--displayProp);
       visibility: var(--visibilityProp);
       height:310px;

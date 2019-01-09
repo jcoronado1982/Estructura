@@ -28,7 +28,7 @@ import Req from '../info/requirements/components/req';
 import Terms from '../info/terms-and-conditions/components/terms';
 import Freq from '../info/frequent/components/freq';
 
-import loanDetail from '../loans/loan_detail/loan_detail';
+import loanDetail from '../loans/components/loan_detail';
 function routes() {
   let activador=true;
   return (

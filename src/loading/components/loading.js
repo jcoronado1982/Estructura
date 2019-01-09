@@ -13,7 +13,7 @@ function Loading(props){
 
 function mapStateToProps(state,props){
     return{
-        show: state.load
+        show: state.LoadingReducer.load
     }
 }
 

@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
-import './css/loan_detail.css';
+import '../css/loan_detail.css';
 class LoanDetail extends Component{
 constructor(){
     super();
@@ -42,26 +42,30 @@ render(){
                 </div>
                 <div className="guarantee">
                     <div className="guaranteeBox">
-                        <div className="guaranteeBoxtitle"><center>Garantias</center></div>
-                        <div className="guaranteeBoxItem">Oro</div>
-                        <div className="guaranteeBoxItem">Plata</div>
-                        <div className="guaranteeBoxItem">Iphone 7 en adelante y Samsing 7 en adelante.</div>
+                        <div className="guaranteeBoxInfo">
+                            <div className="guaranteeBoxtitle"><center><h3>Garantias</h3></center></div>
+                            <div className="guaranteeBoxItem">Oro</div>
+                            <div className="guaranteeBoxItem">Plata</div>
+                            <div className="guaranteeBoxItem">Iphone 7 en adelante y Samsing 7 en adelante.</div>
+                        </div>                           
                     </div>
-                    <div><button>Pedir prestado</button></div>
-                    <div><button>Contrato</button></div>
+                    <div><button className="guaranteeButton">Pedir prestado</button></div>
+                    <div><button className="guaranteeButton">Contrato</button></div>
                 </div>
                 <div className="loanHistory"> 
                     LoanHistoryGrid
                 </div>
                 <div className="comments">
-                    <div>20 de Abrilde 2018 a las 07:37</div>
-                    <div>Excelente atención</div>
-                    <div>28 de Febrero de 2018 a las 18:33</div>
-                    <div>Muy rapido en las operaciones</div>
-                    <div>8 de Marzo de 2018 a las 10:00</div>
-                    <div>Fino</div>
-                    <div>3 de Noviembre de 2017 a las 15:43</div>
-                    <div>Muy atentos</div>
+                    <div className="centerComments">
+                        <div className="commentDate">20 de Abril de 2018 a las 07:37</div>
+                        <div className="commentText">Excelente atención</div>
+                        <div className="commentDate">28 de Febrero de 2018 a las 18:33</div>
+                        <div className="commentText">Muy rapido en las operaciones</div>
+                        <div className="commentDate">8 de Marzo de 2018 a las 10:00</div>
+                        <div className="commentText">Fino</div>
+                        <div className="commentDate">3 de Noviembre de 2017 a las 15:43</div>
+                        <div className="commentText">Muy atentos</div>
+                    </div>                  
                 </div>
             </div>
 

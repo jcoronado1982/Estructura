@@ -9,7 +9,7 @@ class Gif2 extends Component{
             show: true,
             //show:props.state
         }//setTimeout(this.enable.bind(this), 3000);  
-        setTimeout(this.disable.bind(this), 300);                             
+        setTimeout(this.disable.bind(this), 500);                             
     }  
     disable() {
         this.setState({ show: false });
@@ -37,5 +37,10 @@ class Gif2 extends Component{
         )     
     }
 }
+function mapStateToProps(state,props){
+    return{
+        show: state.LoadingReducer.load,
+    }
+}
 
-export default Gif2;
+export default connect(mapStateToProps)(Gif2);

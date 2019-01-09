@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../styles/header.css';
 import Session from '../login/components/session';
+import MenuImage from '../../img/icon/menu.png';
 import {connect} from 'react-redux';
 class Header extends Component{
     constructor(){
@@ -51,14 +52,14 @@ class Header extends Component{
     render(){
         return(
             <div className="item header">
-                <div className="Navigation_logo">
+                <div className="navigationLogo">
                     XRUBI
                 </div>
-                <div className="Navigation_menu" onClick={this.HandleMenuClick}>
-                    {this.state.text}
+                <div className="navigationMenu" onClick={this.HandleMenuClick}>
+                    <img className="navigationMenuIcon" src={MenuImage}></img>
                 </div>
-                <nav className="Navigation_items">
-                    <ul className="Navigation_list">
+                <nav className="navigationItems">
+                    <ul className="navigationList" onClick={this.HandleMenuClick}>
                         <li onClick={this.HandleChange} >
                             <NavLink to="/" activeClassName="is-selected">
                                 Lend
