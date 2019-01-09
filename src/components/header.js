@@ -40,7 +40,7 @@ class Header extends Component{
             type:'isLoading',
             load:false,
         })
-        setTimeout(this.HandleChangeOff,0); 
+        setTimeout(this.HandleChangeOff,1); 
     }
     HandleChangeOff=event =>{
         this.props.dispatch({

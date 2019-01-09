@@ -43,10 +43,10 @@ render(){
                 <div className="guarantee">
                     <div className="guaranteeBox">
                         <div className="guaranteeBoxInfo">
-                            <div className="guaranteeBoxtitle"><center><h3>Garantias</h3></center></div>
+                            <div className="guaranteeBoxtitle">Garantias</div>
                             <div className="guaranteeBoxItem">Oro</div>
                             <div className="guaranteeBoxItem">Plata</div>
-                            <div className="guaranteeBoxItem">Iphone 7 en adelante y Samsing 7 en adelante.</div>
+                            <div className="guaranteeBoxItem">Iphone 7 en adelante y Samsung 7 en adelante.</div>
                         </div>                           
                     </div>
                     <div><button className="guaranteeButton">Pedir prestado</button></div>

@@ -67,12 +67,16 @@
   .guaranteeBox{
       grid-area: guaranteeBox;
       border:1px solid;
-      display: grid;
-    grid-template: repeat(30px,4) / 1fr;
-    grid-template-areas: "guaranteeBoxtitle";
+   
   }
   .guaranteeBoxInfo{
     padding:10px;
+    display: grid;
+    grid-template: 30px 30px 30px 30px/ 1fr;
+    grid-template-areas: "guaranteeBoxtitle"
+                        "guaranteeBoxItem"
+                        "guaranteeBoxItem2"
+                        "guaranteeBoxItem3";
   }
   .guaranteeButton{
     width:100%;
@@ -80,10 +84,23 @@
   }
   .guaranteeBoxtitle{
 grid-area: guaranteeBoxtitle;
+font-size: 1.17em;
+font-weight: bold;
+margin:0px auto;
+display:block
   }
-  .guaranteeBoxItem{
+  .guaranteeBoxItem:nth-child(2){
       padding-left: 10%;
+      grid-area: guaranteeBoxItem;
   }
+  .guaranteeBoxItem:nth-child(3){
+    padding-left: 10%;
+    grid-area: guaranteeBoxItem2;
+}
+.guaranteeBoxItem:nth-child(4){
+  padding-left: 10%;
+  grid-area: guaranteeBoxItem3;
+}
   @media only screen and (max-width: 768px)
 { 
   .detailGrid {
