@@ -1,8 +1,8 @@
 import schema from '../schemas/index.js';
 
 const initialState = {
-  entities: schema.entities,
-  categories: schema.result.categories,
+  info: schema.entities,
+  tablas: schema.result.grids,
   search: [],
 }
 

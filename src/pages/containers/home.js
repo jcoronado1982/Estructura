@@ -7,19 +7,20 @@ class Home extends Component {
   render() {
     return (
       <HandleError>
-        <HomeLayout data={this.props.categories}/>        
+        <HomeLayout data={this.props.grids}/>        
       </HandleError>
     )
   }
 }
 function mapStateToProps(state, props) {
+  //console.log(state.data);
   //console.log(state.data.categories);
   //console.log(state.data.entities.categories);
-  const categories = state.data.categories.map((categoryId) => {
-    return state.data.entities.categories[categoryId]
+  const grids = state.data.tablas.map((categoryId) => {
+    return state.data.info.grids[categoryId]
   })
   return {
-    categories: categories,
+    grids: grids,
     search: state.search
   }
   // function mapStateToProps(state, props) {
