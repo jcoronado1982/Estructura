@@ -10,12 +10,12 @@ class Grid extends Component{
     }
 
    componentDidMount = () => {
-        let id=this.props.data.key;
+        let id=this.props.data.id;
         document.getElementById("grid-th-"+id).style.gridTemplateColumns="repeat("+this.props.data.columns.length+",1fr)";
         document.getElementById("grid-td-"+id).style.gridTemplateColumns="repeat("+this.props.data.columns.length+",1fr)";
     }
     render(){
-        let id=this.props.data.key;
+        let id=this.props.data.id;
         const columns = this.props.data.columns;
         const data = this.props.data.data;
         let grid="grid"+id;

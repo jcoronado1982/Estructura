@@ -7,116 +7,16 @@ class Loans extends Component{
     constructor(props){
         super(props);
         console.log(props);
-        
-        const gridLoans={
-            key:1,
-            columns:[
-                        {title: 'Lender'},
-                        {title: 'Loan Method'},
-                        {title: 'Payment Deadline'},
-                        {title: 'Amount'},
-                        {title: ''}
-                    ]
-            ,
-            data:[
-                    {
-                        row: ['Jesús Alberto Coronado','Loan with guarantee','Three months','$5.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','Have a good reputation','One week','$1.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','Have a good reputation','Two weeks','$2.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','Loan with guarantee','One month','$3.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>]
-                    }
-                ]
-            };
-        const gridExchangeLoans={
-            key:2,
-            columns:[
-                        {title: 'Lender'},
-                        {title: 'Client'},
-                        {title: 'Loan Methodt'},
-                        {title: 'Amount'},
-                        {title: ''}
-                    ]
-            ,
-            data:[
-                    {
-                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','Loan with guarantee','$10.000.000',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Request Transfer</button></NavLink>]
-                    }
-                ]
-            };
-        const gridTopLenders={
-            key:3,
-            columns:[
-                        {title: 'Lender'},
-                        {title: 'Reputation'},
-                        {title: 'Quantity'},
-                        {title: 'Amount'}
-                    ]
-            ,
-            data:[
-                    {
-                        row: ['Jesús Alberto Coronado','5','30','$10.000.000']
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','5','24','$8.000.00']
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','5','10','$1.000.00']
-                    }
-                ]
-            };
-        let gridTopCustomers={
-            key:4,
-            columns:[
-                        {title: 'Client'},
-                        {title: 'Reputation'},
-                        {title: 'Quantity'},
-                        {title: 'Amount'}
-                    ]
-            ,
-            data:[
-                    {
-                        row: ['Jesús Alberto Coronado','5','30','$8.000.000']
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','5','30','$7.000.000']
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','5','20','$10.000.000']
-                    }
-                ]
-            };
-        let gridLastLoans={
-            key:5,
-            columns:[
-                        {title: 'Lender'},
-                        {title: 'Client'},
-                        {title: 'Amount'}
-                    ]
-            ,
-            data:[
-                    {
-                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','$10.000.000']
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','$10.000.000']
-                    },
-                    {
-                        row: ['Jesús Alberto Coronado','Jesús Alberto Coronado','$10.000.000']
-                    }
-                ]
-            };
+        for(var i=0;i <props.data[0].data.length;i++){
+            props.data[0].data[i].row[4]=<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>;
+        }
+      
        this.state={
-        gridLoans: gridLoans,
-        gridExchangeLoans: gridExchangeLoans,
-        gridTopLenders: gridTopLenders,
-        gridTopCustomers: gridTopCustomers,
-        gridLastLoans: gridLastLoans,
+        gridLoans: props.data[0],
+        gridExchangeLoans: props.data[1],
+        gridTopLenders: props.data[2],
+        gridTopCustomers: props.data[3],
+        gridLastLoans: props.data[4],
         currency: 'COP',
         country: 'CO',
         method: 'ALL'
@@ -132,13 +32,13 @@ class Loans extends Component{
                     Borrows money in Bogota 
                 </div>
                 <div>
-                    <Grid data={this.state.gridLoans} key={this.state.gridLoans.key}/>
+                    <Grid data={this.state.gridLoans} key={this.state.gridLoans.id}/>
                 </div>
                 <div className="appTitle marginGrid2">
                     Exchange of loans in Bogota
                 </div>
                 <div>
-                    <Grid data={this.state.gridExchangeLoans} key={this.state.gridExchangeLoans.key}/>
+                    <Grid data={this.state.gridExchangeLoans} key={this.state.gridExchangeLoans.id}/>
                 </div>
                 <div className="gridDoble">
                     <div>
@@ -146,7 +46,7 @@ class Loans extends Component{
                             Top of lenders
                         </div>
                         <div>
-                            <Grid data={this.state.gridTopLenders} key={this.state.gridTopLenders.key}/>
+                            <Grid data={this.state.gridTopLenders} key={this.state.gridTopLenders.id}/>
                         </div>
                     </div>
                     <div>
@@ -154,7 +54,7 @@ class Loans extends Component{
                             Top of customers
                         </div>
                         <div>
-                            <Grid data={this.state.gridTopCustomers} key={this.state.gridTopCustomers.key}/>
+                            <Grid data={this.state.gridTopCustomers} key={this.state.gridTopCustomers.id}/>
                         </div>
                     </div>
                 </div>
@@ -162,7 +62,7 @@ class Loans extends Component{
                     Last loans
                 </div>
                 <div>
-                    <Grid data={this.state.gridLastLoans} key={this.state.gridLastLoans.key}/>
+                    <Grid data={this.state.gridLastLoans} key={this.state.gridLastLoans.id}/>
                 </div>
             </div>  
             
