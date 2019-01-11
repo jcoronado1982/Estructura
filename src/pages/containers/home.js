@@ -22,6 +22,17 @@ function mapStateToProps(state, props) {
     categories: categories,
     search: state.search
   }
+  // function mapStateToProps(state, props) {
+  //   //console.log(state.data.categories);
+  //   //console.log(state.data.entities.categories);
+  //   const categories = state.data.categories.map((categoryId) => {
+  //     return state.data.entities.categories[categoryId]
+  //   })
+  //   return {
+  //     categories: categories,
+  //     search: state.search
+  //   }
+  
 
 }
 export default connect(mapStateToProps)(Home)

@@ -1,17 +1,42 @@
 import React, { Component} from 'react';
 import { Link, NavLink } from'react-router-dom';
 import '../css/loan_detail.css';
+import Grid from '../../widgets/grid/components/grid';
+
 class LoanDetail extends Component{
 constructor(){
     super();
-    this.state={
+    const gridLoanDetail={
+        key:6,
+        columns:[
+                    {title: 'Deudor'},
+                    {title: 'Monto de pago'},
+                    {title: 'Acciones'},
+                ]
+        ,
+        data:[
+                {
+                    row: ['Esteban Garcia','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                },
+                {
+                    row: ['Rengifo Colmenares','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                },
+                {
+                    row: ['Susana Noruega','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                },
+                {
+                    row: ['Maria torres','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                }
+            ]
+        };
 
+    this.state={
+        gridLoanDetail:gridLoanDetail,
     }
 }
 //funciones van aqui
 render(){
     return(
-        <div>
             <div className="detailGrid">
                 <div className="loanInfo">
                     <div className="infoLoan">Información del prestamo</div>
@@ -44,16 +69,18 @@ render(){
                     <div className="guaranteeBox">
                         <div className="guaranteeBoxInfo">
                             <div className="guaranteeBoxtitle">Garantias</div>
-                            <div className="guaranteeBoxItem">Oro</div>
-                            <div className="guaranteeBoxItem">Plata</div>
-                            <div className="guaranteeBoxItem">Iphone 7 en adelante y Samsung 7 en adelante.</div>
+                            <div className="guaranteeBoxItem"><ul className="LoanD">Oro</ul></div>
+                            <div className="guaranteeBoxItem"><ul className="LoanD">Plata</ul></div>
+                            <div className="guaranteeBoxItem"><ul className="LoanD">Iphone 7 en adelante y Samsung 7 en adelante.</ul></div>
                         </div>                           
                     </div>
                     <div><button className="guaranteeButton">Pedir prestado</button></div>
                     <div><button className="guaranteeButton">Contrato</button></div>
                 </div>
                 <div className="loanHistory"> 
-                    LoanHistoryGrid
+                <div className="appTitle marginLoanHistory">Historial del prestamo</div>
+                <Grid data={this.state.gridLoanDetail} key={this.state.gridLoanDetail.key}/>
+                <div className="appTitle marginComments">Comentarios</div>
                 </div>
                 <div className="comments">
                     <div className="centerComments">
@@ -69,8 +96,6 @@ render(){
                 </div>
             </div>
 
-            
-        </div>
 
     )
 }

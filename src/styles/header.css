@@ -97,7 +97,6 @@ ul {
       z-index: 997;
     }
     .navigationMenu:hover{
-      background-color: #111;
     }
     .navigationItems{
       display:var(--displayProp);
