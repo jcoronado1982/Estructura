@@ -137,12 +137,18 @@ list-style-position:inside;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr/ 100%;
     grid-gap: 0px;
-    height: 317.5vh;
+    height: 311vh;
     grid-template-areas: "loanInfo"
                          "guarantee"
                          "loanHistory"
                          "comments";
-  }.loanInfo{
+  }
+  .loanHistory{
+    width:90%;
+    padding:0px;
+    padding-bottom: 20px;
+  }
+  .loanInfo{
     padding: 0px;
     display: grid;
     grid-template: repeat(25,40px) /  1fr;
@@ -154,6 +160,6 @@ list-style-position:inside;
     padding-top: 8px;
   }
   .guarantee{
-    padding:10%;
+    padding:4%;
   }
 }
