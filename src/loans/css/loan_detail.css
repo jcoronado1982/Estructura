@@ -114,7 +114,7 @@
     overflow: hidden;
     background: none;
     display:list-item;
-list-style-position:inside;
+    list-style-position:inside;
   }
   .guaranteeBoxItem:nth-child(2){
     padding-left: 10%;
