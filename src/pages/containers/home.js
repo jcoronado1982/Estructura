@@ -3,11 +3,24 @@ import HomeLayout from '../components/home-layout';
 import HandleError from '../../error/containers/handle-error';
 
 import { connect } from 'react-redux';
+import { showUsers } from '../../utility/apiRestAction'
+
 class Home extends Component {
+
+  componentWillMount() {
+    this.props.showUsers()
+  }
+  renderUsersList() {
+    return this.props.users.map((user) => {
+      console.log(user.name);
+    })
+  }
+
+  
   render() {
     return (
       <HandleError>
-        <HomeLayout data={this.props.grids}/>        
+        <HomeLayout data={this.props.grids}/>      { this.renderUsersList() }   
       </HandleError>
     )
   }
@@ -16,12 +29,14 @@ function mapStateToProps(state, props) {
   //console.log(state.data);
   //console.log(state.data.categories);
   //console.log(state.data.entities.categories);
+ 
   const grids = state.data.tablas.map((categoryId) => {
     return state.data.info.grids[categoryId]
   })
   return {
     grids: grids,
-    search: state.search
+    search: state.search,
+    users: state.user.list,
   }
   // function mapStateToProps(state, props) {
   //   //console.log(state.data.categories);
@@ -36,4 +51,4 @@ function mapStateToProps(state, props) {
   
 
 }
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps, { showUsers })(Home)
