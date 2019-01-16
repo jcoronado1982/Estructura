@@ -1,16 +1,14 @@
-
+import axios from 'axios'
 
 export const SHOW_USERS = 'SHOW_USERS'
 
 export function showUsers() {
-    const users =[
-        {id:1,name:'Camila'},
-        {id:2,name:'Andrés'}
-    ]
-    return  {
-       type:SHOW_USERS,
-       payload:users,
-    }
     
+    return (dispatch, getState) => {
+        axios.get('http://jsonplaceholder.typicode.com/users')
+            .then((response) => {
+                dispatch( { type: SHOW_USERS, payload: response.data } ) 
+            }) 
+    }    
 } 
 
