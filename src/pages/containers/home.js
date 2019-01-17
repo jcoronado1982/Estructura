@@ -4,7 +4,7 @@ import HandleError from '../../error/containers/handle-error';
 
 import { connect } from 'react-redux';
 import { showUsers } from '../../utility/apiRestAction'
-
+import Services from '../../services/services';
 class Home extends Component {
 
   componentWillMount() {
@@ -20,7 +20,7 @@ class Home extends Component {
   render() {
     return (
       <HandleError>
-        <HomeLayout data={this.props.grids}/>      { this.renderUsersList() }   
+        <HomeLayout data={this.props.grids}/>   <Services/>   
       </HandleError>
     )
   }
