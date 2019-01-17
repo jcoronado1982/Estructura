@@ -1,43 +1,61 @@
 import React, { Component} from 'react';
 //'http://jsonplaceholder.typicode.com/users'
-function Services(props){
-    
-      function llamado1(id) {
+class Services extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            items: [],
+            isLoaded: false
+        }
+    }
+    llamado1() {
         fetch('http://jsonplaceholder.typicode.com/users')
-          .then((response) => {
-            return response.json()
-          })
-          .then((data) => {
-             console.log(data)
-          })
-      }
-      function llamado2(id) {
+            .then(res => res.json())
+            .then(json => {
+                this.setState({
+                    isLoaded: true,
+                    items: json
+                })
+            });
+    }
+    llamado2() {
         fetch('http://jsonplaceholder.typicode.com/users')
-          .then((response) => {
-            return response.json()
-          })
-          .then((data) => {
-             console.log(data)
-          })
-      }
-      function llamado3(id) {
+            .then(res => res.json())
+            .then(json => {
+                this.setState({
+                    isLoaded: true,
+                    items: json
+                })
+            });
+    }
+    llamado3() {
         fetch('http://jsonplaceholder.typicode.com/users')
-          .then((response) => {
-            return response.json()
-          })
-          .then((data) => {
-             console.log(data)
-          })
-      }
-    
-          return (
-            <div >
-              {llamado1()}     
-              {llamado2()}  
-              {llamado3()}  
-            </div>
-          )
-        
+            .then(res => res.json())
+            .then(json => {
+                this.setState({
+                    isLoaded: true,
+                    items: json
+                })
+            });
+    }
+    render() {
+        // var { isLoaded, items } = this.state;
+        // if (!isLoaded) {
+        //     return <div>Loading...</div>;
+        // }
+        return (false
+            // <div >
+                
+            //     <ul>
+            //         {items.map(item => (
+            //             <li key="{item.id}">
+            //                 {console.log('Name: '+item.name)}
+            //             </li>
+            //         ))}
+            //     </ul>
+            // </div>
+        );
+    }
     
 // request1(){
 //     axios.get('http://jsonplaceholder.typicode.com/users')
