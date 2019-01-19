@@ -7,8 +7,21 @@ class Services extends Component{
             items: [],
             isLoaded: false
         }
+        
     }
+    componentDidMount() {
+        // Child passes its method to the parent
+        this.props.shareMethods(this.prueba.bind(this),this.prueba2.bind(this),this.llamado1.bind(this))
+      }
+  
+    prueba=()=>{
+       alert("entro1");
+    }
+    prueba2=()=>{
+        alert("entro2");
+     }
     llamado1() {
+        alert("ir al llamado");
         fetch('http://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
             .then(json => {
@@ -39,30 +52,9 @@ class Services extends Component{
             });
     }
     render() {
-        // var { isLoaded, items } = this.state;
-        // if (!isLoaded) {
-        //     return <div>Loading...</div>;
-        // }
-        return (false
-            // <div >
-                
-            //     <ul>
-            //         {items.map(item => (
-            //             <li key="{item.id}">
-            //                 {console.log('Name: '+item.name)}
-            //             </li>
-            //         ))}
-            //     </ul>
-            // </div>
-        );
+        return (false);
     }
     
-// request1(){
-//     axios.get('http://jsonplaceholder.typicode.com/users')
-//             .then((response) => {
-//                return map(response.data.name)
-//             }) 
-// }
 
 }
 export default Services;

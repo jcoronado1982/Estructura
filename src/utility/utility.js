@@ -4,6 +4,8 @@ import Services from '../services/services'
 class Utility extends Component{
     constructor(props) {
         super(props);
+        
+      
         this.state = {            
         };
         this.child1=React.createRef();
@@ -11,11 +13,20 @@ class Utility extends Component{
 call1 = () =>{
     // this.child1.current.llamado1();
 };
+
+  acceptMethods = (fucncionPrueba1,fucncionPrueba2,llamado1) => {
+    this.fucncionPrueba1 = fucncionPrueba1;
+    this.fucncionPrueba2 = fucncionPrueba2;
+    this.cualquiera = llamado1;
+  };
+
    render(){
     return(
         <div>
-            <Services ref={this.child1}/>
-            <button onClick={this.call1()}>click to make request1</button>            
+            <Services shareMethods={this.acceptMethods}/>
+            <button onClick={() => this.fucncionPrueba1()}>Click1</button>     
+            <button onClick={() => this.fucncionPrueba2()}>Click2</button>
+            <button onClick={() => this.cualquiera()}>Click3</button>     
             </div>
         
         )
@@ -29,3 +40,12 @@ call1 = () =>{
     
 }
 export default Utility;
+
+function Saludar(props) {
+    alert("etsts");
+    return (
+      <div>
+        <h1>Hola, {props.name}!</h1>
+      </div>
+    );
+  }
