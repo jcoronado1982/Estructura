@@ -2,7 +2,6 @@
     display: grid;
     grid-template: 1fr 398px 240px/ 60% 40%;
     grid-gap: 0px;
-    height: 150vh;
     grid-template-areas: "loanInfo guarantee"
                           "loanHistory loanHistory"
                           "comments comments";
