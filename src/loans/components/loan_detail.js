@@ -7,7 +7,6 @@ class LoanDetail extends Component{
 constructor(){
     super();
     const gridLoanDetail={
-        key:6,
         columns:[
                     {title: 'Deudor'},
                     {title: 'Monto de pago'},
@@ -16,54 +15,89 @@ constructor(){
         ,
         data:[
                 {
-                    row: ['Esteban Garcia','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                    row: ['Esteban Garcia','$100.000.00',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
                 },
                 {
-                    row: ['Rengifo Colmenares','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                    row: ['Rengifo Colmenares','$500.000.00',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
                 },
                 {
-                    row: ['Susana Noruega','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                    row: ['Susana Noruega','$500.000.00',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
                 },
                 {
-                    row: ['Maria torres','$100',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
+                    row: ['Maria torres','$1.000.000.00',<NavLink to="/loan_detail" activeClassName="is-selected"><button>Ver historial</button></NavLink>]
                 }
             ]
         };
-
+    const labels={
+            label:
+                    {
+                        mainTitle: 'Loan information',
+                        gridTitle:'Loan history',
+                        name: 'Name',
+                        loanAmount: 'Amount to pay',  
+                        publicationDate: 'Publication date',
+                        Interests: 'Interests',
+                        creditTime: 'Credit Time',
+                        ReputationLender: 'Reputation of the lender',
+                        NumberLoans: 'Number of loans',
+                        VerifiedMail: 'Verified Mail',
+                        VerifiedPhone: ' Verified phone',
+                        identification: 'Identification (passport or driving license)',
+                        trustingUsers: '+3 users trust in the'
+                    }
+            
+            };
+    const datalender={
+        infoRersonal:
+                {
+                    name: 'Jesús Alberto Coronado',
+                    loanAmount: '$5.000.00',  
+                    publicationDate: '10/01/2018',
+                    Interests: '10%',
+                    creditTime: '3 meses',
+                    ReputationLender: 'Muy Buena',
+                    NumberLoans: '4',
+                    VerifiedMail: 'Verificado',
+                    VerifiedPhone: 'Verificado',
+                    identification: 'Verificado',
+                    trustingUsers: '+3 users trust in the'
+                }
+            
+        };
     this.state={
-        gridLoanDetail:gridLoanDetail,
+        labels:labels,
+        datalender:datalender,
+        gridLoanDetail:gridLoanDetail
     }
 }
-//funciones van aqui
+
 render(){
     return(
             <div className="detailGrid">
                 <div className="loanInfo">
-                    <div className="infoLoan">Información del prestamo</div>
-                    <div className="LoanInfoTitle">Nombre:</div>
-                    <div className="LoanInfoItem">Juan Perez</div>
-                    <div className="LoanInfoTitle">Cantidad a prestar:</div>
-                    <div className="LoanInfoItem">$100.00</div>
-                    <div className="LoanInfoTitle">Fecha de Publicación:</div>
-                    <div className="LoanInfoItem">10/05/2018</div>
-                    <div className="LoanInfoTitle">Intereses:</div>
-                    <div className="LoanInfoItem">10%</div>
-                    <div className="LoanInfoTitle">Tiempo de Credito:</div>
-                    <div className="LoanInfoItem">3 meses</div>
-                    <div className="LoanInfoTitle">Reputación del prestamista:</div>
-                    <div className="LoanInfoItem">Buena</div>
-                    <div className="LoanInfoTitle">Numero de prestamos:</div>
-                    <div className="LoanInfoItem">+100</div>
-                    <div className="LoanInfoTitle">Correo verificado:</div>
-                    <div className="LoanInfoItem">Verificado</div>
-                    <div className="LoanInfoTitle">Telefono verificado:</div>
-                    <div className="LoanInfoItem">verificado</div>
-                    <div className="LoanInfoTitle">Identificacion,pasaporte o permiso de conducir:</div>
-                    <div className="LoanInfoItem">verificado</div>
-                    <div className="LoanInfoTitle">Confianza:</div>
-                    <div className="LoanInfoItem">+50</div>
-                    <div className="LoanInfoTitle">Bloqueos:</div>
-                    <div className="LoanInfoItem">0</div>
+                    <div className="infoLoan">{this.state.labels.label.mainTitle}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.name}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.name}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.loanAmount}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.loanAmount}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.publicationDate}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.publicationDate}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.Interests}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.Interests}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.creditTime}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.creditTime}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.ReputationLender}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.ReputationLender}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.NumberLoans}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.NumberLoans}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.VerifiedMail}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.VerifiedMail}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.VerifiedPhone}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.VerifiedPhone}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.identification}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.identification}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.trustingUsers}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.trustingUsers}</div>
                 </div>
                 <div className="guarantee">
                     <div className="guaranteeBox">
@@ -78,8 +112,8 @@ render(){
                     <div><button className="guaranteeButton">Contrato</button></div>
                 </div>
                 <div className="loanHistory"> 
-                <div className="appTitle marginLoanHistory">Historial del prestamo</div>
-                <Grid data={this.state.gridLoanDetail} key={this.state.gridLoanDetail.key}/>
+                <div className="appTitle marginLoanHistory">{this.state.labels.label.gridTitle}</div>
+                    <Grid data={this.state.gridLoanDetail} key={this.state.gridLoanDetail.key}/>
                 <div className="appTitle marginComments">Comentarios</div>
                 </div>
                 <div className="comments">
@@ -95,8 +129,6 @@ render(){
                     </div>                  
                 </div>
             </div>
-
-
-    )
+     )
 }
 }export default LoanDetail;
