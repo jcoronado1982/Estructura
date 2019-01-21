@@ -12,8 +12,7 @@ class Services extends Component{
     componentDidMount() {
         // Child passes its method to the parent
         this.props.shareMethods(this.prueba.bind(this),this.prueba2.bind(this),this.llamado1.bind(this))
-      }
-  
+      }  
     prueba=()=>{
        alert("entro1");
     }

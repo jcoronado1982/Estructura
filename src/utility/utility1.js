@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { SHOW_USERS } from '../utility/apiRestAction'
+import { SHOW_USERS } from './apiRestAction'
 import Services from '../services/services'
 class Utility extends Component{
     constructor(props) {
@@ -14,7 +14,7 @@ class Utility extends Component{
     };
    render(){
     return(
-        <div className="utilityDiv">
+        <div className="utilityDiv1">
             <Services shareMethods={this.acceptMethods}/>
             <button onClick={() => this.fucncionPrueba1()}>Click1</button>     
             <button onClick={() => this.fucncionPrueba2()}>Click2</button>
