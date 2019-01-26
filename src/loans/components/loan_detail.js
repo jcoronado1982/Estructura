@@ -32,18 +32,19 @@ constructor(){
             label:
                     {
                         mainTitle: 'Loan information',
+                        commentTitle:'Comments',
                         gridTitle:'Loan history',
                         name: 'Name',
                         loanAmount: 'Amount to pay',  
                         publicationDate: 'Publication date',
-                        Interests: 'Interests',
+                        interests: 'Interests',
                         creditTime: 'Credit Time',
-                        ReputationLender: 'Reputation of the lender',
-                        NumberLoans: 'Number of loans',
-                        VerifiedMail: 'Verified Mail',
-                        VerifiedPhone: ' Verified phone',
+                        reputationLender: 'Reputation of the lender',
+                        numberLoans: 'Number of loans',
+                        verifiedMail: 'Verified mail',
+                        verifiedPhone: ' Verified phone',
                         identification: 'Identification (passport or driving license)',
-                        trustingUsers: '+3 users trust in the'
+                        trustingUsers: 'Trust'
                     }
             
             };
@@ -53,12 +54,12 @@ constructor(){
                     name: 'Jesús Alberto Coronado',
                     loanAmount: '$5.000.00',  
                     publicationDate: '10/01/2018',
-                    Interests: '10%',
+                    interests: '10%',
                     creditTime: '3 meses',
-                    ReputationLender: 'Muy Buena',
+                    reputationLender: 'Muy Buena',
                     NumberLoans: '4',
-                    VerifiedMail: 'Verificado',
-                    VerifiedPhone: 'Verificado',
+                    verifiedMail: 'Verificado',
+                    verifiedPhone: 'Verificado',
                     identification: 'Verificado',
                     trustingUsers: '+3 users trust in the'
                 }
@@ -82,18 +83,18 @@ render(){
                     <div className="LoanInfoItem">{this.state.datalender.infoRersonal.loanAmount}</div>
                     <div className="LoanInfoTitle">{this.state.labels.label.publicationDate}:</div>
                     <div className="LoanInfoItem">{this.state.datalender.infoRersonal.publicationDate}</div>
-                    <div className="LoanInfoTitle">{this.state.labels.label.Interests}:</div>
-                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.Interests}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.interests}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.interests}</div>
                     <div className="LoanInfoTitle">{this.state.labels.label.creditTime}:</div>
                     <div className="LoanInfoItem">{this.state.datalender.infoRersonal.creditTime}</div>
-                    <div className="LoanInfoTitle">{this.state.labels.label.ReputationLender}:</div>
-                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.ReputationLender}</div>
-                    <div className="LoanInfoTitle">{this.state.labels.label.NumberLoans}:</div>
-                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.NumberLoans}</div>
-                    <div className="LoanInfoTitle">{this.state.labels.label.VerifiedMail}:</div>
-                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.VerifiedMail}</div>
-                    <div className="LoanInfoTitle">{this.state.labels.label.VerifiedPhone}:</div>
-                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.VerifiedPhone}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.reputationLender}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.reputationLender}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.numberLoans}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.numberLoans}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.verifiedMail}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.verifiedMail}</div>
+                    <div className="LoanInfoTitle">{this.state.labels.label.verifiedPhone}:</div>
+                    <div className="LoanInfoItem">{this.state.datalender.infoRersonal.verifiedPhone}</div>
                     <div className="LoanInfoTitle">{this.state.labels.label.identification}:</div>
                     <div className="LoanInfoItem">{this.state.datalender.infoRersonal.identification}</div>
                     <div className="LoanInfoTitle">{this.state.labels.label.trustingUsers}:</div>
@@ -114,7 +115,7 @@ render(){
                 <div className="loanHistory"> 
                 <div className="appTitle marginLoanHistory">{this.state.labels.label.gridTitle}</div>
                     <Grid data={this.state.gridLoanDetail} key={this.state.gridLoanDetail.key}/>
-                <div className="appTitle marginComments">Comentarios</div>
+                <div className="appTitle marginComments">{this.state.labels.label.commentTitle}</div>
                 </div>
                 <div className="comments">
                     <div className="centerComments">

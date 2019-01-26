@@ -1,0 +1,35 @@
+{
+  "sessions": [
+    {
+      "id": "1",
+      "session": "lend",
+      "label": [
+        {"gridTitleBorrowsMoney": "Borrows money in Bogota"},
+        {"gridTitleExchangeloan": "Exchange of loans in Bogota"},
+        {"gridTitleToplenders": "Top of lenders"},
+        {"gridTitleTopCustomers": "Top of customers"},
+        {"gridTitleLastLoans": "Last loans"}
+      ]
+    },
+    {
+      "id": "2",
+      "session": "loan_detail",
+      "label": [
+        {"mainTitle": "Loan information"},
+        {"commentTitle": "Comments"},
+        {"gridTitle": "Loan history"},
+        {"name": "Name"},
+        {"loanAmount": "Amount to pay"},
+        {"publicationDate": "Publication date"},
+        {"interests": "Interests"},
+        {"creditTime": "Credit Time"},
+        {"reputationLender": "Reputation of the lender"},
+        {"numberLoans": "Number of loans"},
+        {"verifiedMail": "Verified mail"},
+        {"verifiedPhone": "Verified phone"},
+        {"identification": "Identification (passport or driving license)"},
+        {"trustingUsers": "Trust"}
+      ]
+    }
+  ]
+}

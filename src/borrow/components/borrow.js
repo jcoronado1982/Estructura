@@ -4,8 +4,10 @@ class Borrow extends Component{
 
   
 render(){
+
   return (
     <div>
+      <button onClick={() => this.fucncionPrueba1()}>PRUEBA ***</button>     
       <div className="item Module">Borrow </div>   
     </div>    
   )

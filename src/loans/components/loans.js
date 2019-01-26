@@ -10,8 +10,21 @@ class Loans extends Component{
         for(var i=0;i <props.data[0].data.length;i++){
             props.data[0].data[i].row[4]=<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>;
         }
-      
+       
+        const labels={
+            label:
+                    {
+                        gridTitleBorrowsMoney: 'Borrows money in Bogota',
+                        gridTitleExchangeloan:'Exchange of loans in Bogota',
+                        gridTitleToplenders:'Top of lenders',
+                        gridTitleTopCustomers: 'Top of customers',
+                        gridTitleLastLoans: 'Last loans'
+                    }
+            
+            };
+
        this.state={
+        labels:labels,
         gridLoans: props.data[0],
         gridExchangeLoans: props.data[1],
         gridTopLenders: props.data[2],
@@ -29,13 +42,13 @@ class Loans extends Component{
             <div className="appContent">
                 <Searcher  currency={this.state.currency} country={this.state.country} method={this.state.method}/>
                 <div className="appTitle marginGrid1">
-                    Borrows money in Bogota 
+                    {this.state.labels.label.gridTitleBorrowsMoney}
                 </div>
                 <div>
                     <Grid data={this.state.gridLoans} key={this.state.gridLoans.id}/>
                 </div>
                 <div className="appTitle marginGrid2">
-                    Exchange of loans in Bogota
+                    {this.state.labels.label.gridTitleExchangeloan}
                 </div>
                 <div>
                     <Grid data={this.state.gridExchangeLoans} key={this.state.gridExchangeLoans.id}/>
@@ -43,7 +56,7 @@ class Loans extends Component{
                 <div className="gridDoble">
                     <div>
                         <div className="appTitle">
-                            Top of lenders
+                            {this.state.labels.label.gridTitleToplenders}
                         </div>
                         <div>
                             <Grid data={this.state.gridTopLenders} key={this.state.gridTopLenders.id}/>
@@ -51,7 +64,7 @@ class Loans extends Component{
                     </div>
                     <div>
                         <div className="appTitle">
-                            Top of customers
+                            {this.state.labels.label.gridTitleTopCustomers}
                         </div>
                         <div>
                             <Grid data={this.state.gridTopCustomers} key={this.state.gridTopCustomers.id}/>
@@ -59,7 +72,7 @@ class Loans extends Component{
                     </div>
                 </div>
                 <div className="appTitle marginGrid2">
-                    Last loans
+                    {this.state.labels.label.gridTitleLastLoans}
                 </div>
                 <div>
                     <Grid data={this.state.gridLastLoans} key={this.state.gridLastLoans.id}/>
