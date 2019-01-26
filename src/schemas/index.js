@@ -1,3 +1,4 @@
+import en from '../languages/en.json';
 import api from '../api.json';
 import { normalize, schema } from 'normalizr';
 
@@ -15,9 +16,14 @@ const vGrid = new schema.Entity('grids', {
 const vGrid = new schema.Entity('grids', {
  // playlist: new schema.Array(idSearcher)
 })
+const vSessions = new schema.Entity('sessions', {
+  
+ })
 
 const normalizedDataGrids = { grids: new schema.Array(vGrid)}
+const sessions = { sessions: new schema.Array(vSessions)}
 
 const normalizedData = normalize(api, normalizedDataGrids);
+const sessionsData = normalize(en, sessions);
 
-export default normalizedData;
+export default {normalizedData,sessionsData};

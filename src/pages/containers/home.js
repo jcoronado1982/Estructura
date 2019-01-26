@@ -12,7 +12,7 @@ class Home extends Component {
   }
   renderUsersList() {
     return this.props.users.map((user) => {
-      console.log(user.name);
+     // console.log(user.name);
     })
   }
 
@@ -20,35 +20,26 @@ class Home extends Component {
   render() {
     return (
       <HandleError>
-        <HomeLayout data={this.props.grids}/>  
+        <HomeLayout dataLabels={this.props.labels} dataGrid={this.props.grids}/>  
       </HandleError>
     )
   }
 }
 function mapStateToProps(state, props) {
-  //console.log(state.data);
-  //console.log(state.data.categories);
-  //console.log(state.data.entities.categories);
  
-  const grids = state.data.tablas.map((categoryId) => {
-    return state.data.info.grids[categoryId]
+  const grids = state.data.idGrids.map((id) => {
+    return state.data.dataGrids.grids[id]
   })
+  const labels = state.data.idSessionsLabels.map((id) => {
+    return state.data.dataSessionsLabels.sessions[id]
+  })
+
   return {
+    labels: labels,
     grids: grids,
     search: state.search,
     users: state.user.list,
   }
-  // function mapStateToProps(state, props) {
-  //   //console.log(state.data.categories);
-  //   //console.log(state.data.entities.categories);
-  //   const categories = state.data.categories.map((categoryId) => {
-  //     return state.data.entities.categories[categoryId]
-  //   })
-  //   return {
-  //     categories: categories,
-  //     search: state.search
-  //   }
   
-
 }
 export default connect(mapStateToProps, { showUsers })(Home)

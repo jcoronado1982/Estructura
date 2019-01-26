@@ -6,30 +6,20 @@ import Searcher from './searcher';
 class Loans extends Component{
     constructor(props){
         super(props);
-        console.log(props);
-        for(var i=0;i <props.data[0].data.length;i++){
-            props.data[0].data[i].row[4]=<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>;
+        for(var i=0;i <props.dataGrid[0].data.length;i++){
+            props.dataGrid[0].data[i].row[4]=<NavLink to="/loan_detail" activeClassName="is-selected"><button>Borrow</button></NavLink>;
+        }
+        for(var i=0;i <props.dataGrid[1].data.length;i++){
+            props.dataGrid[1].data[i].row[4]=<NavLink to="/loan_detail" activeClassName="is-selected"><button>Change Loan</button></NavLink>;
         }
        
-        const labels={
-            label:
-                    {
-                        gridTitleBorrowsMoney: 'Borrows money in Bogota',
-                        gridTitleExchangeloan:'Exchange of loans in Bogota',
-                        gridTitleToplenders:'Top of lenders',
-                        gridTitleTopCustomers: 'Top of customers',
-                        gridTitleLastLoans: 'Last loans'
-                    }
-            
-            };
-
        this.state={
-        labels:labels,
-        gridLoans: props.data[0],
-        gridExchangeLoans: props.data[1],
-        gridTopLenders: props.data[2],
-        gridTopCustomers: props.data[3],
-        gridLastLoans: props.data[4],
+        labels:props.dataLabels[0],
+        gridLoans: props.dataGrid[0],
+        gridExchangeLoans: props.dataGrid[1],
+        gridTopLenders: props.dataGrid[2],
+        gridTopCustomers: props.dataGrid[3],
+        gridLastLoans: props.dataGrid[4],
         currency: 'COP',
         country: 'CO',
         method: 'ALL'
@@ -77,8 +67,7 @@ class Loans extends Component{
                 <div>
                     <Grid data={this.state.gridLastLoans} key={this.state.gridLastLoans.id}/>
                 </div>
-            </div>  
-            
+            </div>      
         )
     }
 }
