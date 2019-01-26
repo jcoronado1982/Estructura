@@ -3,7 +3,7 @@ import HomeLayout from '../components/home-layout';
 import HandleError from '../../error/containers/handle-error';
 
 import { connect } from 'react-redux';
-import { showUsers } from '../../utility/apiRestAction'
+import { showUsers } from '../../utility/apiRestAction';
 
 class Home extends Component {
 
@@ -16,7 +16,6 @@ class Home extends Component {
     })
   }
 
-  
   render() {
     return (
       <HandleError>
