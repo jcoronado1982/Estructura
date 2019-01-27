@@ -5,10 +5,11 @@ import Session from '../login/components/session';
 import MenuImage from '../../img/icon/menu.png';
 import {connect} from 'react-redux';
 class Header extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         let htmlStyles = window.getComputedStyle(document.querySelector("html"));
         this.state ={
+            labels:props.labels[5],
             menuOpen:false,  
             text:"menu",
             };
@@ -51,48 +52,56 @@ class Header extends Component{
     
     render(){
         return(
-            <div className="item header">
-                <div className="navigationLogo">
-                    XRUBI
-                </div>
-                <div className="navigationMenu" onClick={this.HandleMenuClick}>
-                    <img className="navigationMenuIcon" src={MenuImage}></img>
-                </div>
-                <nav className="navigationItems">
-                    <ul className="navigationList" onClick={this.HandleMenuClick}>
-                        <li onClick={this.HandleChange} >
-                            <NavLink to="/" activeClassName="is-selected">
-                                Lend
-                            </NavLink>
-                        </li>
-                        <li onClick={this.HandleChange}>
-                            <NavLink to="/Borrow" activeClassName="is-selected">
-                                Borrow
-                            </NavLink>
-                        </li>
-                        <li onClick={this.HandleChange}>
-                            <NavLink to="/Help" activeClassName="is-selected">
-                                Help center
-                            </NavLink>
-                        </li>
-                        <li onClick={this.HandleChange}>
-                            <NavLink to="/Auction"activeClassName="is-selected">
-                                In auction 
-                            </NavLink>
-                        </li>
-                        <li onClick={this.HandleChange}>
-                            <NavLink to="/Exchange" activeClassName="is-selected">
-                                Exchange your loan
-                            </NavLink>
-                        </li>
-                        <li  className="session">
-                            <Session/>
-                        </li>
-                    </ul>
-                </nav>
-            
-            </div>       
+                <div className="item header">
+                    <div className="navigationLogo">
+                        XRUBI
+                    </div>
+                    <div className="navigationMenu" onClick={this.HandleMenuClick}>
+                        <img className="navigationMenuIcon" src={MenuImage}></img>
+                    </div>
+                    <nav className="navigationItems">
+                        <ul className="navigationList" onClick={this.HandleMenuClick}>
+                            <li onClick={this.HandleChange} >
+                                <NavLink to="/" activeClassName="is-selected">
+                                    {this.state.labels.label.lend}
+                                </NavLink>
+                            </li>
+                            <li onClick={this.HandleChange}>
+                                <NavLink to="/Borrow" activeClassName="is-selected">
+                                    {this.state.labels.label.borrow}
+                                </NavLink>
+                            </li>
+                            <li onClick={this.HandleChange}>
+                                <NavLink to="/Help" activeClassName="is-selected">
+                                    {this.state.labels.label.helpCenter}
+                                </NavLink>
+                            </li>
+                            <li onClick={this.HandleChange}>
+                                <NavLink to="/Auction"activeClassName="is-selected">
+                                    {this.state.labels.label.inAuction}
+                                </NavLink>
+                            </li>
+                            <li onClick={this.HandleChange}>
+                                <NavLink to="/Exchange" activeClassName="is-selected">
+                                    {this.state.labels.label.exchangeYourLoan}
+                                </NavLink>
+                            </li>
+                            <li  className="session">
+                                <Session/>
+                            </li>
+                        </ul>
+                    </nav>
+                 </div>       
         )
     }
 }
-export default connect()(Header);
+function mapStateToProps(state, props) {
+    const labels = state.data.idSessionsLabels.map((id) => {
+      return state.data.dataSessionsLabels.sessions[id]
+    })
+    
+    return {
+      labels: labels
+    }
+ }
+export default connect(mapStateToProps)(Header);

@@ -5,6 +5,7 @@ import '../css/loan_detail.css';
 import Grid from '../../widgets/grid/components/grid';
 import { showUsers } from '../../utility/apiRestAction';
 
+
 class LoanDetail extends Component{
     constructor(props){
         super(props);
@@ -50,8 +51,9 @@ class LoanDetail extends Component{
                 
             };
             
+
         this.state={
-            labels:props.labels[1],
+            labels:props.labels[2],
             datalender:datalender,
             gridLoanDetail:gridLoanDetail
         }
@@ -88,14 +90,14 @@ class LoanDetail extends Component{
                     <div className="guarantee">
                         <div className="guaranteeBox">
                             <div className="guaranteeBoxInfo">
-                                <div className="guaranteeBoxtitle">Garantias</div>
+                                <div className="guaranteeBoxtitle">{this.state.labels.label.Guarantee}</div>
                                 <div className="guaranteeBoxItem"><ul className="LoanD">Oro</ul></div>
                                 <div className="guaranteeBoxItem"><ul className="LoanD">Plata</ul></div>
                                 <div className="guaranteeBoxItem"><ul className="LoanD">Iphone 7 en adelante y Samsung 7 en adelante.</ul></div>
                             </div>                           
                         </div>
-                        <div><button className="guaranteeButton">Pedir prestado</button></div>
-                        <div><button className="guaranteeButton">Contrato</button></div>
+                        <div><button className="guaranteeButton">{this.state.labels.label.borrow}</button></div>
+                        <div><button className="guaranteeButton">{this.state.labels.label.contract}</button></div>
                     </div>
                     <div className="loanHistory"> 
                     <div className="appTitle marginLoanHistory">{this.state.labels.label.gridTitle}</div>
@@ -119,20 +121,12 @@ class LoanDetail extends Component{
     }
 }
 function mapStateToProps(state, props) {
- 
-    const grids = state.data.idGrids.map((id) => {
-      return state.data.dataGrids.grids[id]
-    })
     const labels = state.data.idSessionsLabels.map((id) => {
       return state.data.dataSessionsLabels.sessions[id]
     })
-  
-    return {
-      labels: labels,
-      grids: grids,
-      search: state.search,
-      users: state.user.list,
-    }
     
-  }
-export default connect(mapStateToProps, { showUsers })(LoanDetail)
+    return {
+      labels: labels
+    }
+ }
+ export default connect(mapStateToProps, { showUsers })(LoanDetail)

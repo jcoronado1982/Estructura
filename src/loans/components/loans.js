@@ -12,9 +12,10 @@ class Loans extends Component{
         for(var i=0;i <props.dataGrid[1].data.length;i++){
             props.dataGrid[1].data[i].row[4]=<NavLink to="/loan_detail" activeClassName="is-selected"><button>Change Loan</button></NavLink>;
         }
-       
+      
        this.state={
         labels:props.dataLabels[0],
+        regions:props.dataLabels[3],
         gridLoans: props.dataGrid[0],
         gridExchangeLoans: props.dataGrid[1],
         gridTopLenders: props.dataGrid[2],
@@ -30,7 +31,7 @@ class Loans extends Component{
     render(){
         return(
             <div className="appContent">
-                <Searcher  currency={this.state.currency} country={this.state.country} method={this.state.method}/>
+                <Searcher currency={this.state.currency} country={this.state.country} method={this.state.method}/>
                 <div className="appTitle marginGrid1">
                     {this.state.labels.label.gridTitleBorrowsMoney}
                 </div>

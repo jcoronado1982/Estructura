@@ -26,4 +26,5 @@ const sessions = { sessions: new schema.Array(vSessions)}
 const normalizedData = normalize(api, normalizedDataGrids);
 const sessionsData = normalize(en, sessions);
 
+
 export default {normalizedData,sessionsData};
